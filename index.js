@@ -21,6 +21,7 @@ mongoose.connect(process.env.MDB_CONNECT)
 .then(()=>{console.log('Mongodb connected')});
 
 // set up routes
+
 // app.use("/api", require("./Router/RegistrationRouter"));
 // app.use("/cnt", require("./Router/CountRouter"));
 app.use("/auth", require("./Routes/Authentication"));
