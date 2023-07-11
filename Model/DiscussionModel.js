@@ -10,15 +10,14 @@ const discussSchema = new mongoose.Schema({
     message:{ type: String, required: false },
     created_at:{ type: String, required: false },
     }],
-  admin: { type: Boolean, required: false },
   tags:[
     { type: String, required: false },
   ],
   otherdetails:[
     { type: String, required: false },
   ],
-  created_at:{ type: String, required: true },
-  updated_at:{ type: String, required: true },
+  created_at: { type: String, required: true },
+  updated_at: { type: String, required: true },
 });
 
 const Discuss = mongoose.model("discuss", discussSchema);

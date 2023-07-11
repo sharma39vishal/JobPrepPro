@@ -10,7 +10,6 @@ const questionSchema = new mongoose.Schema({
     message:{ type: String, required: false },
     created_at:{ type: String, required: false },
     }],
-  admin: { type: Boolean, required: false },
   tags:[
     { type: String, required: false },
   ],

@@ -9,7 +9,8 @@ exports.createjwtcookie = async ({savedUser}) => {
         expiresIn: "3h",
     });
     // send the token in a HTTP-only cookie
-    res.cookie("Authentication", token, {
+    res.cookie("token", token, {
+        maxAge: 3 * 60 * 60 * 1000,
         httpOnly: true,
         secure: true,
         sameSite: "none",

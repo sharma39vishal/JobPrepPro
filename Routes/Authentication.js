@@ -8,6 +8,7 @@ const { loginbyemail, loginbyusername } = require("../Controller/loginuser");
 
 // Google Authentication
 router.use("/", require("./Googleauth"));
+router.use("/", require("./Githubauth"));
 
 router.post("/register", async (req, res) => {
     try {

@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const session = require("express-session");
+const { default: jwtDecode } = require("jwt-decode");
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 
@@ -52,7 +53,7 @@ passport.use(
   
 // for production "http://localhost:3000"+ on redirect
 
-  router.get("/isauthenticated",async (req,res)=>{
+  router.get("/isgoogleauthenticated",async (req,res)=>{
     if (req.isAuthenticated()) {
       // console.log(req.user._json.name);
       // console.log(req.user._json.email);
