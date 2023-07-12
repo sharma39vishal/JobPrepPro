@@ -14,6 +14,7 @@ const userSchema = new mongoose.Schema({
   ],
   created_at:{ type: String, required: true },
   updated_at:{ type: String, required: true },
+  account_status:{ type: String, required: true },
 });
 
 const User = mongoose.model("user", userSchema);

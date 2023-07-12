@@ -1,8 +1,10 @@
 const Logs = require("../Model/LogsModel");
 
-exports.Recordlog =(props) => {
+const Recordlog=(props) => {
     // console.log(props);
-    const newlog = new Logs({user_id:props.user_id,what:props.what,created_at:props.created_at});
-    newlog.save().then(() => console.log("Log Added!"))
+    const newlog = new Logs({user_id:props.user_id,ip:props.ip,what:props.what,created_at:new Date()});
+    newlog.save().then(() => console.log(""))
         .catch((err) => console.log("Error: " + err)); 
 };
+
+module.exports=Recordlog;

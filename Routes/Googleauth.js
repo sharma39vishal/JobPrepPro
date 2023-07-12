@@ -2,7 +2,14 @@ const router = require("express").Router();
 const session = require("express-session");
 const { default: jwtDecode } = require("jwt-decode");
 const passport = require("passport");
+const { loginuser } = require("../Controller/loginuser");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
+const User = require("../Model/UserModel");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const jwt_decode=require("jwt-decode");
+const generateuniqueusername = require("../Controller/getuniqueusername");
+const Recordlog = require("../Controller/logs");
 
 router.use(
     session({
@@ -47,7 +54,7 @@ passport.use(
   
   router.get("/google/callback",    passport.authenticate("google", { failureRedirect: "/login" }),
     function (req, res) {
-      res.redirect("/registration");
+      res.redirect("/auth/isgoogleauthenticated");
     }
   );
   
@@ -55,9 +62,63 @@ passport.use(
 
   router.get("/isgoogleauthenticated",async (req,res)=>{
     if (req.isAuthenticated()) {
+      const existingemail = await User.findOne({ email:req.user._json.email });
+      if(existingemail){
+          const token = jwt.sign(
+            {
+              user: existingemail._id,
+            },
+            process.env.JWT_SECRET
+          );
+        // send the token in a HTTP-only cookie
+        res.cookie("token", token, {
+            maxAge: 3 * 60 * 60 * 1000,
+            httpOnly: true,
+            secure: true,
+            sameSite: "none",
+        }).status(200).redirect("/");
+      }
+      else{
+        // save a new user account to the db
+        const mail=req.user._json.email;
+        const takeoutemailname=mail.substring(0,mail.indexOf("@"));
+        const username=await generateuniqueusername({"username":takeoutemailname})
+        const newUser = new User({
+            profilePic: "https://firebasestorage.googleapis.com/v0/b/vishal-6ccf0.appspot.com/o/icons8-customer-96.png?alt=media&token=8b3c091b-dad2-4831-a836-8c904a35d6a9",
+            username ,
+            name: username,
+            email:req.user._json.email,
+            password:"$2a$10$AYGkEUdWY1YwkChGY/fQjuFnaTXuHzCqD7SqDbr7iCmhvNUP8MH46",
+            phone: "",
+            githubid: "",
+            admin: false,
+            otherdetails: [],
+            created_at: new Date(),
+            updated_at: new Date(),
+            account_status:"Active"
+        });
+    
+        const savedUser = await newUser.save();  
+        // sign the token
+        Recordlog({user_id:savedUser._id,ip:req.ip,what:"New User Created By Google Auth"})
+          const token = jwt.sign(
+            {
+              user: savedUser._id,
+            },
+            process.env.JWT_SECRET
+          );
+        // send the token in a HTTP-only cookie
+        res.cookie("token", token, {
+            maxAge: 3 * 60 * 60 * 1000,
+            httpOnly: true,
+            secure: true,
+            sameSite: "none",
+        }).status(200).redirect("/");
+      }
       // console.log(req.user._json.name);
       // console.log(req.user._json.email);
-      res.send({status:true,auth_name:req.user._json.name,auth_email:req.user._json.email})
+      // res.send({status:true,auth_name:req.user._json.name,auth_email:req.user._json.email})
+      // res.redirect("/")
     }
     else{
         res.send(false)

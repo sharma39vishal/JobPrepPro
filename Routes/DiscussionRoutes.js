@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const Discussion = require("../Model/DiscussionModel");
-const isauthenticated = require("../Middleware/isauthenticated")
+const isauthenticated = require("../Middleware/isauthenticated");
+const Recordlog = require("../Controller/logs");
 
 //Root route
 router.get("/",(req, res) => {
@@ -9,7 +10,7 @@ router.get("/",(req, res) => {
         .then((discuss) => res.json(discuss))
         .catch((err) => res.status(400).json("Error: " + err));
     } catch (err) {
-      res.json(false);
+        res.status(400).json("Error: " + err);
     }
 });
 
@@ -27,6 +28,7 @@ router.post("/adddiscussion",isauthenticated,(req, res) => {
     // console.log(req.body);
     const newDiscussion = new Discussion({images,user_id,Title,discription,Comments:[],otherdetails:[],tags,created_at:new Date(),updated_at:new Date()});
     // Save the new post
+    Recordlog({user_id,ip:req.ip,what:"New Discussion Added"})
     newDiscussion.save()
         .then(() => res.json("Discussion Added!"))
         .catch((err) => res.status(400).json("Error: " + err));
