@@ -38,6 +38,9 @@ router.get('/github/callback', (req, res) => {
         // console.log(response.data)
      const existinggithub = await User.findOne({ githubid:response.data.login});
       if(existinggithub){
+        if(existinggithub.account_status!=="Active"){
+          return res.status(400).json({ errorMessage: "Account Does Not Exist", });
+      }
           const token = jwt.sign(
             {
               user: existinggithub._id,

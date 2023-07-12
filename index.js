@@ -28,6 +28,7 @@ mongoose.connect(process.env.MDB_CONNECT)
 app.use("/auth", require("./Routes/Authentication"));
 app.use("/discuss", require("./Routes/DiscussionRoutes"));
 app.use("/questions", require("./Routes/QuestionRoutes"));
+app.use("/achiver", require("./Routes/AchiversRoutes"));
 app.use("/profile",isauthenticated,require("./Routes/UserProfile"));
 app.use("/logs",isauthenticated,require("./Routes/LogsRouter"));
 

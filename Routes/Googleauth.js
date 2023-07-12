@@ -64,6 +64,9 @@ passport.use(
     if (req.isAuthenticated()) {
       const existingemail = await User.findOne({ email:req.user._json.email });
       if(existingemail){
+          if(existingemail.account_status!=="Active"){
+            return res.status(400).json({ errorMessage: "Account Does Not Exist", });
+          }
           const token = jwt.sign(
             {
               user: existingemail._id,
