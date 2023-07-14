@@ -5,6 +5,13 @@ exports.id = 155;
 exports.ids = [155];
 exports.modules = {
 
+/***/ 4021:
+/***/ ((module) => {
+
+module.exports = import("next/dist/compiled/@vercel/og/index.node.js");;
+
+/***/ }),
+
 /***/ 2037:
 /***/ ((module) => {
 
@@ -12,7 +19,7 @@ module.exports = require("os");
 
 /***/ }),
 
-/***/ 1149:
+/***/ 3486:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -38,12 +45,12 @@ __webpack_require__.d(favicon_next_metadata_route_namespaceObject, {
 });
 
 // EXTERNAL MODULE: ./node_modules/next/dist/server/node-polyfill-headers.js
-var node_polyfill_headers = __webpack_require__(6519);
+var node_polyfill_headers = __webpack_require__(5050);
 // EXTERNAL MODULE: ./node_modules/next/dist/server/future/route-modules/app-route/module.js
-var app_route_module = __webpack_require__(3488);
+var app_route_module = __webpack_require__(1910);
 var module_default = /*#__PURE__*/__webpack_require__.n(app_route_module);
-;// CONCATENATED MODULE: external "next/server"
-const server_namespaceObject = require("next/server");
+// EXTERNAL MODULE: ./node_modules/next/server.js
+var server = __webpack_require__(514);
 ;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-metadata-route-loader.js?page=%2Ffavicon.ico%2Froute&isDynamic=0!./app/favicon.ico?__next_metadata_route__
 
 
@@ -52,7 +59,7 @@ const buffer = Buffer.from("AAABAAQAEBAAAAEAIAAoBQAARgAAACAgAAABACAAKBQAAG4FAAAw
   )
 
 function GET() {
-  return new server_namespaceObject.NextResponse(buffer, {
+  return new server.NextResponse(buffer, {
     headers: {
       'Content-Type': contentType,
       'Cache-Control': "public, max-age=0, must-revalidate",
@@ -100,7 +107,7 @@ const dynamic = 'force-static'
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [697,451], () => (__webpack_exec__(1149)));
+var __webpack_exports__ = __webpack_require__.X(0, [669,656], () => (__webpack_exec__(3486)));
 module.exports = __webpack_exports__;
 
 })();
