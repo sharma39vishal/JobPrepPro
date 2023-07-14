@@ -36,18 +36,18 @@ const dev = process.env.NODE_ENV !== 'production';
 const nextapp = next({ dev, dir: './client' });
 const handle = nextapp.getRequestHandler();
 const path=require("path");
+
+// app.use(express.static(path.join(__dirname, 'client')));
+// Handle Next.js page requests
+app.get('/_next/*', (req, res) => {
+  return handle(req, res);
+});
+
 nextapp.prepare()
   .then(() => {
     app.get('*', (req, res) => {
       return handle(req, res);
     });
-    
-    app.use(express.static(path.join(__dirname, 'client', '.next', 'static')));
-    // Handle Next.js page requests
-    app.get('/_next/*', (req, res) => {
-      return handle(req, res);
-    });
-    
     app.listen(PORT, err => {
       if (err) throw err;
       console.log(`Server started on port: ${PORT}`);
