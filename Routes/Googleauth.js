@@ -1,5 +1,4 @@
 const router = require("express").Router();
-const session = require("express-session");
 const { default: jwtDecode } = require("jwt-decode");
 const passport = require("passport");
 const { loginuser } = require("../Controller/loginuser");
@@ -10,17 +9,28 @@ const jwt = require("jsonwebtoken");
 const jwt_decode=require("jwt-decode");
 const generateuniqueusername = require("../Controller/getuniqueusername");
 const Recordlog = require("../Controller/logs");
+const session = require("express-session");
+const MongoDBStore = require("connect-mongodb-session")(session);
+
+const store = new MongoDBStore({
+  uri: process.env.MDB_CONNECT, // Replace with your MongoDB connection string
+  collection: "sessions", // Name of the collection to store sessions in
+  autoRemove: "native", // Automatically remove expired sessions from the store
+});
+
+store.on("error", function (error) {
+  console.error("MongoDB session store error:", error);
+});
 
 router.use(
-    session({
-      secret: process.env.SESSIONSECRET,
-      resave: false,
-      saveUninitialized: true,
-      cookie: { secure: false },
-    })
+  session({
+    secret: process.env.SESSIONSECRET,
+    resave: false,
+    saveUninitialized: true,
+    store: store,
+    cookie: { secure: false },
+  })
 );
-
-//change cookie true
 
 // Initialize passport
 router.use(passport.initialize());
