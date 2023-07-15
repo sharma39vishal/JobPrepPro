@@ -31,6 +31,12 @@ app.use("/achiver", require("./Routes/AchiversRoutes"));
 app.use("/profile",isauthenticated,require("./Routes/UserProfile"));
 app.use("/logs",isauthenticated,require("./Routes/LogsRouter"));
 
+app.listen(PORT, err => {
+  if (err) throw err;
+  console.log(`Server started on port: ${PORT}`);
+});
+
+
 // const next = require('next')
 // const dev = process.env.NODE_ENV !== 'production';
 // const nextapp = next({ dev, dir: './client' });
@@ -48,10 +54,10 @@ app.use("/logs",isauthenticated,require("./Routes/LogsRouter"));
 //     app.get('*', (req, res) => {
 //       return handle(req, res);
 //     });
-    app.listen(PORT, err => {
-      if (err) throw err;
-      console.log(`Server started on port: ${PORT}`);
-    });
+    // app.listen(PORT, err => {
+    //   if (err) throw err;
+    //   console.log(`Server started on port: ${PORT}`);
+    // });
   // })
   // .catch(err => {
   //   console.error('Error preparing application', err);
