@@ -1,0 +1,14 @@
+.roadmap-main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.roadmap-section-1-container {
+    font-size: 3em;
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
