@@ -1,0 +1,124 @@
+/* Parent Header Container */
+.header-main{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    /* position: fixed;
+    top: 0;
+    z-index: 99; */
+}
+
+/* Navbar items container inside the parent container */
+.navbar-container{
+    width: 98%;
+    /* padding: 1.5em; */
+    /* border: 1px solid grey; */
+    /* margin: 0.2em; */
+    padding: 0.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Items Container: Display Grid */
+.nav-items-container{
+    width: 98%;
+    margin: 0.3em;
+    padding: 0.5em;
+    display: grid;
+    grid-template-columns: 4fr 1fr 2fr;
+    gap: 0.3em;
+    /* border: 1px solid chartreuse; */
+}
+
+/* Navbar Left Side Items */
+.navbar-left-items{
+    /* border: 1px solid navy; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 1.22em;
+    padding: 0.3em;
+}
+
+.navbar-left-items a{
+    padding: 0.4em;
+    margin: 0.4em;
+    text-decoration: none;
+    color: #fff;
+    /* color: #00aaff; */
+}
+
+.navbar-left-items a:hover{
+    border-bottom: 0.1em solid #fff;
+    /* border-bottom: 0.1em solid #ff9933; */
+}
+
+/* Navbar Center Logo Section */
+.navbar-logo{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img{
+    height: 13vh;
+}
+
+/* Navbar Right Side Items */
+.navbar-right-items{
+    /* border: 1px solid skyblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* font-size: 1.22em; */
+    padding: 0.3em;
+    padding-right: 1.5em;
+}
+
+.navbar-right-items a{
+    font-weight: 400;
+    padding: 0.4em;
+    margin: 0.4em;
+    text-decoration: none;
+}
+
+/* Developer item CSS */
+.nav-right-developer{
+    font-size: 1.22em;
+}
+
+.nav-right-developer a{
+    color: #fff;
+}
+
+.nav-right-developer a:hover{
+    border-bottom: 0.1em solid #fff;
+    /* border-bottom: 0.1em solid  #66ccff; */
+}
+
+/* Sign In CSS */
+.nav-right-signin{
+    /* background-color: grey; */
+    font-size: 1.22em; 
+    /* border: 0.1em solid #fff; */
+    /* border-radius: 0.3em; */
+    padding: 0.3em;
+}
+
+.nav-right-signin a{
+    color: #000;
+    background-color: grey;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    font-weight: 500;
+}
+
+.nav-right-signin a:hover{
+    background-color: bisque;
+    color: #000;
+}
