@@ -1,14 +1,14 @@
 /* Parent Header Container */
 .header-main{
-    height: 20vh;
+    height: 16vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     /* border: 1px solid red; */
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    z-index: 99; */
+    z-index: 99;
 }
 
 /* Navbar items container inside the parent container */
@@ -39,23 +39,34 @@
 .navbar-left-items{
     /* border: 1px solid navy; */
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     font-size: 1.22em;
     padding: 0.3em;
 }
 
 .navbar-left-items a{
+    /* border: 1px solid red; */
+    margin: 0.4em 0.4em 0.2em 0.4em;
     padding: 0.4em;
-    margin: 0.4em;
     text-decoration: none;
     color: #fff;
-    /* color: #00aaff; */
+    display: inline-block;
 }
 
-.navbar-left-items a:hover{
+/* left navbar on hover transition */
+.nav-left-single-item a::after{
+    border: 1px solid grey;
+    content: ' ';
+    display: block;
+    transform: scaleX(0);
+    margin: 0.1em;
     border-bottom: 0.1em solid #fff;
-    /* border-bottom: 0.1em solid #ff9933; */
+    background: #fff;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: center; 
+}
+.nav-left-single-item a:hover::after{
+    transform: scaleX(1);
 }
 
 /* Navbar Center Logo Section */
@@ -75,16 +86,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* font-size: 1.22em; */
     padding: 0.3em;
     padding-right: 1.5em;
 }
 
 .navbar-right-items a{
-    font-weight: 400;
     padding: 0.4em;
     margin: 0.4em;
     text-decoration: none;
+    display: inline-block;
+    color: #fff;
 }
 
 /* Developer item CSS */
@@ -92,29 +103,33 @@
     font-size: 1.22em;
 }
 
-.nav-right-developer a{
-    color: #fff;
-}
-
-.nav-right-developer a:hover{
+/* Developer On hover Transition */
+.nav-right-developer a::after{
+    content: ' ';
+    display: block;
+    transform: scaleX(0);
+    margin: 0.1em;
     border-bottom: 0.1em solid #fff;
-    /* border-bottom: 0.1em solid  #66ccff; */
+    transition: transform 0.2s ease-in-out;
+    transform-origin: center; 
+}
+.nav-right-developer a:hover::after{
+    transform: scaleX(1);
 }
 
 /* Sign In CSS */
 .nav-right-signin{
-    /* background-color: grey; */
     font-size: 1.22em; 
-    /* border: 0.1em solid #fff; */
-    /* border-radius: 0.3em; */
     padding: 0.3em;
+    margin-bottom: 0.2em;
 }
 
 .nav-right-signin a{
     color: #000;
-    background-color: grey;
+    background-color: #fff;
     border-radius: 0.3em;
     padding: 0.5em;
+    margin: 0.1em;
     font-weight: 500;
 }
 
@@ -122,3 +137,12 @@
     background-color: bisque;
     color: #000;
 }
+
+/* Active link */
+/* .active{
+    border-bottom: 0.1em solid #ffffff;
+} */
+
+/* .nav-left-single-item a:active{
+    border-bottom: 0.1em solid #ffffff;
+} */
