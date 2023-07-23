@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh;
+    padding-top: 16vh;
+    background-color: #B8E8FC;
 }
 
 /* .achievers-section-1-container {
@@ -20,19 +23,25 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100vh;
-    padding-top: 16vh;
-    border: 1px solid red;
+    font-family: 'Inter', sans-serif;
+    background-color: #B8E8FC;
+
+    /* height: 100vh;
+    padding-top: 16vh; */
 }
 
 .single-story-container {
-    border: 1px solid green;
-    height: 80vh;
+    height: 78vh;
     width: 100%;
-    padding: 1em;
+    /* padding: 1em; */
     margin: 1em;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    font-family: 'Inter', sans-serif;
+    background-color: #BCCEF8;
+    /* background-color: #D2DAFF; */
+    border-radius: 0.3em;
 }
 
 /* Achiever Image Container CSS And Properties */
@@ -44,6 +53,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0.3em;
 }
 
 .achiever-image-container img {
@@ -54,7 +64,121 @@
 
 /* Achiever Content Container CSS And Properties */
 .achiever-content-container {
-    border: 1px solid yellowgreen;
+    /* border: 1px solid yellowgreen; */
     height: 55vh;
     width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #FAF4B7;
+    color: #000;
+    border-radius: 0.3em;
 }
+
+/* Name of Achiever container CSS */
+.achiever-name-container{
+    /* border: 1px solid red; */
+    margin: 0.5em 0.5em 0 0.5em;
+    font-size: 1.55em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+/* Designation of Achiever container CSS */
+.achiever-designation{
+    /* border: 1px solid red; */
+    font-size: 0.8em;
+    margin: 0.5em;
+    margin-top: 0;
+    padding: 0 0.5em;
+    font-weight: 350;
+    letter-spacing: 0.5px;
+}
+
+/* Success Story of Achiever container CSS */
+.achiever-story{
+    /* border: 1px solid red; */
+    margin: 0.5em;
+    padding: 0.5em;
+    letter-spacing: 0.5px;
+    height: 60%;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+/* More in Achivers */
+/* Button and Connect link parent container CSS */
+.achiever-more{
+    display: flex;
+    /* border: 1px solid red; */
+    margin: 0 0.5em;
+    justify-content: space-between;
+}
+
+/* Connection Link Container CSS */
+.connect-to-achiever{
+    /* border: 1px solid red; */
+    padding: 0.5em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.connect-to-achiever a{
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+}
+
+/* Connect on hover transition */
+.connect-to-achiever a::after{
+    /* border: 1px solid grey; */
+    content: ' ';
+    display: block;
+    transform: scaleX(0);
+    margin: 0.1em;
+    border-bottom: 0.1em solid #000;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: center; 
+}
+.connect-to-achiever a:hover::after{
+    transform: scaleX(1);
+}
+
+.connect-to-achiever img{
+    width: 1em;
+    margin: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+/* REad More button Container CSS */
+.readmore-achiever{
+    /* border: 1px solid red; */
+    padding: 0 0 0.2em 0;
+}
+
+.readmore-achiever button {
+    width: fit-content;
+    min-width: 100px;
+    height: 3em;
+    padding: 8px;
+    border-radius: 0.3em;
+    /* border: 0.2em solid #E0E1E4; */
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    /* font-family: 'Poppins', sans-serif; */
+  }
+  
+  .readmore-achiever button:hover {
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+  .readmore-achiever button:active {
+    transform: scale(0.95);
+  }
