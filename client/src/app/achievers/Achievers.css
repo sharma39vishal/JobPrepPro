@@ -1,14 +1,60 @@
+/* page.js CSS (Achievers Main Page) */
 .achievers-main {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.achievers-section-1-container {
+/* .achievers-section-1-container {
     font-size: 3em;
     text-align: center;
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
+} */
+
+/* Single Achiever CSS starts Here */
+.achiever-single-story-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding-top: 16vh;
+    border: 1px solid red;
+}
+
+.single-story-container {
+    border: 1px solid green;
+    height: 80vh;
+    width: 100%;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+}
+
+/* Achiever Image Container CSS And Properties */
+.achiever-image-container {
+    width: 35%;
+    height: 65vh;
+    margin: 1em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achiever-image-container img {
+    border-radius: 0.3em;
+    width: 95%;
+    /* Adjusting the size of the image */
+}
+
+/* Achiever Content Container CSS And Properties */
+.achiever-content-container {
+    border: 1px solid yellowgreen;
+    height: 55vh;
+    width: 50%;
 }
