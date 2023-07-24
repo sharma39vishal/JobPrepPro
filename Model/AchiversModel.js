@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 
 const achiversSchema = new mongoose.Schema({
   images: { type: String, required: true },
-  user_id: { type: String, required: true },
-  Title: { type: String, required: true },
+  name:{ type: String, required: true },
+  designation:{ type: String, required: true },
   discription: { type: String, required: false },
   Comments: [ {
     user_id:{ type: String, required: false },
@@ -13,6 +13,7 @@ const achiversSchema = new mongoose.Schema({
   tags:[
     { type: String, required: false },
   ],
+ connect:{ type: String, required: true },
   otherdetails:[
     { type: String, required: false },
   ],
