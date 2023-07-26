@@ -25,7 +25,7 @@ export default function SingleAchiever(props) {
               <img src="https://cdn-icons-png.flaticon.com/512/3536/3536569.png" alt="" />
             </div>
             <div className="readmore-achiever">
-              <button>Read More</button>
+            {props.achiever_story.length>500? <button>Read More</button>:null}
             </div>
           </div>
         </div>

@@ -162,7 +162,7 @@
     padding: 0 0 0.2em 0;
 }
 
-.achiever-button {
+.readmore-achiever button {
     width: fit-content;
     min-width: 100px;
     height: 3em;
@@ -177,11 +177,11 @@
     /* font-family: 'Poppins', sans-serif; */
 }
 
-.achiever-button:hover {
+.readmore-achiever button:hover {
     background-color: #F2F2F2;
     box-shadow: 0px 0px 20px -18px;
 }
 
-.achiever-button:active {
+.readmore-achiever button:active {
     transform: scale(0.95);
 }
