@@ -1,14 +1,22 @@
+/* Full Practice Container Access CSS */
 .practice-main{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    padding-top: 16vh;
+    background-color: #BCCEF8;
 }
 
-.practice-section-1-container{
-    font-size: 3em;
-    text-align: center;
+/* DSA Sheet Section Starts Here */
+/* DSA Sheet Container : Section 1 CSS */
+.practice-dsa-sheet-container{
+    margin: 0.5em;
+    min-height: 20vh;
     display: flex;
-    height: 100vh;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    padding: 0.2em;
 }
+
