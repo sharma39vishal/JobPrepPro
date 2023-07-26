@@ -5,7 +5,7 @@ export default function page() {
         <div class="outer-box">
             <div class="modal">
             <form class="form">
-              <p class="heading">Change password</p>
+              <p class="heading">Change Password</p>
 
               <p class="instruction">Your new password must be different from previous used passwords.</p>
 
