@@ -1,0 +1,46 @@
+.dsa-sheet-main{
+    /* border: 1px solid red; */
+    margin: 0.5em;
+    width: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 0.4em;
+    background-color: #FAF4B7;
+    cursor: pointer;
+}
+
+.dsa-sheet-main:hover{
+    background-color: #FFD966;
+}
+
+
+.dsapractice-sheet-layout{
+    text-align: center;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+.dsa-sheet-name{
+    padding: 0.5em;
+    letter-spacing: 1px;
+    line-height: 1.1em;
+    font-size: 1.22em;
+    color: #000;
+}
+
+/* .start-dsa-practice{
+    margin-top: 0.4em;
+    align-self: flex-start;
+}
+
+.start-dsa-practice h5{
+    /* border: 1px solid blue; 
+    display: inline;
+    padding: 0.3em;
+    font-size: 0.9em;
+    border-radius: 0.3em;
+    color: #000;
+    font-weight: 350;
+} */
