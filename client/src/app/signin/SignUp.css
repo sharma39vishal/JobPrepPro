@@ -1,16 +1,22 @@
-.outer-box{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100vh;
+.signin-main{
     padding-top: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #B8E8FC;
+    min-height: 100vh;    
+}
+.outer-box{
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: border-box;
+    /* margin-top: 5em; */
+    /* padding-bottom: 10vh; */
   }
 
 .modal {
     width: 32em;
     margin: auto;
-    margin-top: 5em;
     background: #BCCEF8;
     border-radius: 1em;
     padding-top: 2em;
@@ -135,3 +141,53 @@ button:hover {
     display: flex;
     margin: auto ;
 }
+
+
+
+.tab-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    padding: .125em;
+    background-color: #FDFFBC;
+    border-radius: .57em;
+    margin: .625em 1.25em 0 20px;
+  }
+  
+  .indicator {
+    width: 50%;
+    height: 2.5em;
+    background: #FDD998;
+    position: absolute;
+    border-radius: .5em;
+    transition: all 0.2s ease-out;
+  }
+  
+  .tab {
+    /* width: 40%; */
+    height: 2.5em;
+    position: relative;
+    z-index: 99;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 1;
+    cursor: pointer;
+    font-weight: 500;
+    color: black;
+    font-size: 1em;
+  }
+  
+  .tab--1:hover ~ .indicator {
+    left: .125em;
+    background-color: #FDD998;
+  }
+  
+  .tab--2:hover ~ .indicator {
+    left: calc(50% - .125em);
+    background-color: #FDD998;
+  }
+  
