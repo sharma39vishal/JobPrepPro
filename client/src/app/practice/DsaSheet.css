@@ -1,46 +1,40 @@
-.dsa-sheet-main{
+.dsa-sheet-main {
     /* border: 1px solid red; */
-    margin: 0.5em;
-    width: 13%;
+    margin: 0.5em 0.8em;
+    width: 16%;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 0.4em;
-    background-color: #FAF4B7;
     cursor: pointer;
+    overflow: hidden;
 }
 
-.dsa-sheet-main:hover{
-    background-color: #FFD966;
+.dsa-sheet-main img {
+    overflow: hidden;
+    object-fit: cover;
+    opacity: 0.8;
+    /* transition: 0.2s ease-in-out; */
 }
 
-
-.dsapractice-sheet-layout{
-    text-align: center;
-    margin: 0.2em;
-    padding: 0.2em;
+.dsa-sheet-main img:hover {
+    /* transform: scale(1.2); */
+    filter: blur(1.3px);
 }
 
-.dsa-sheet-name{
-    padding: 0.5em;
+.dsa-sheet-main h4 {
+    /* border: 1px solid blue; */
+    padding-bottom: 0.5em;
     letter-spacing: 1px;
     line-height: 1.1em;
     font-size: 1.22em;
-    color: #000;
+    font-weight: 400;
+    position: absolute;
+    color: #fff;
+    align-self: flex-end;
+    z-index: 1;
 }
 
-/* .start-dsa-practice{
-    margin-top: 0.4em;
-    align-self: flex-start;
-}
-
-.start-dsa-practice h5{
-    /* border: 1px solid blue; 
-    display: inline;
-    padding: 0.3em;
-    font-size: 0.9em;
-    border-radius: 0.3em;
-    color: #000;
-    font-weight: 350;
+/* .dsa-sheet-main:hover{
+    filter: blur(1px);
 } */
