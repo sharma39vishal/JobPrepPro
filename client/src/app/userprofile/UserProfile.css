@@ -6,51 +6,43 @@
     padding-top: 16vh;
     background-color: #B8E8FC;
   }
-
-  .container{
-    background: #BCCEF8;
-    width: 40em;
+  
+  .modal {
+    width: 38em;
     margin: auto;
-    text-align: center;
+    background: #BCCEF8;
     border-radius: 1em;
-    padding: 3em 0em;
+    padding: 2em;
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .text{
+    text-align: center;
+    padding: 2em;
     color: black;
   }
-
-  .upper-txt{
-    padding: 1em;
-  }
-
-  .middle-txt{
-    /* padding: 1em; */
-    font-size: 3em;
-    font-weight: 1000;
-    letter-spacing: .2em;
-  }
-
-  .lower-txt{
-    padding: 1em;
-  }
-
-  .time-container{
-    display: flex;
-    margin: 2em 9em;
-  }
-
-  .time{
-    background: #C9F4AA;
+  
+  p{
     padding: .5em;
-    border-radius: .5em;
-    margin: .7em;
-    width: 8em;
+    font-weight: 500;
   }
-
+  
   button {
     max-width: 20em;
     display: flex;
     padding: 0.5rem 1.4rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
+    font-weight: 500;
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
@@ -62,19 +54,20 @@
     background-color: #FDFFBC;
     cursor: pointer;
     transition: all .6s ease;
-    margin: auto;
-}
-
-.button svg {
-  height: 1.5em;
-  margin: .3em;
-}
-
-button:hover {
+    margin-right: .5em;
+    margin-left: .5em;
+  }
+  
+  button:hover {
     transform: scale(1.02);
     background-color: #FDD998;
-}
-
-.top-buttons {
+    cursor: pointer;
+  }
+  
+  .bottom-buttons {
     display: flex;
-}
+    margin: 1em 4.5em ;
+  }
+  
+  
+  

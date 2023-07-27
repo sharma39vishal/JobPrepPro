@@ -1,5 +1,5 @@
 import React from 'react'
-import './Developers.css'
+import './Jobopening.css'
 export default function page() {
   return (
     <div class="outer-box">
