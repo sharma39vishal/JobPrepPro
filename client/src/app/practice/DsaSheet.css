@@ -1,0 +1,40 @@
+.dsa-sheet-main {
+    /* border: 1px solid red; */
+    margin: 0.5em 0.8em;
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 0.4em;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.dsa-sheet-main img {
+    overflow: hidden;
+    object-fit: cover;
+    opacity: 0.8;
+    /* transition: 0.2s ease-in-out; */
+}
+
+.dsa-sheet-main img:hover {
+    /* transform: scale(1.2); */
+    filter: blur(1.3px);
+}
+
+.dsa-sheet-main h4 {
+    /* border: 1px solid blue; */
+    padding-bottom: 0.5em;
+    letter-spacing: 1px;
+    line-height: 1.1em;
+    font-size: 1.22em;
+    font-weight: 400;
+    position: absolute;
+    color: #fff;
+    align-self: flex-end;
+    z-index: 1;
+}
+
+/* .dsa-sheet-main:hover{
+    filter: blur(1px);
+} */

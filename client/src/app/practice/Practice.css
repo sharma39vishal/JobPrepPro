@@ -1,14 +1,56 @@
+/* Full Practice Container Access CSS */
 .practice-main{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    padding-top: 16vh;
+    background-color: #BCCEF8;
 }
 
-.practice-section-1-container{
-    font-size: 3em;
-    text-align: center;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+/* DSA Sheet Section Starts Here */
+.practice-dsa-sheet{
+    padding: 0.2em;
+    /* border: 1px solid black; */
 }
+
+/* Heading Section */
+.dsa-sheet-heading{
+    margin: 0 1.4em;
+    padding: 0.1em;
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+}
+
+/* DSA Sheet Heading */
+.dsa-sheet-heading h4{
+    /* margin: 0.1em; */
+    padding: 0.1em;
+    font-size: 1.2em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* See All Heading */
+.dsa-sheet-heading h5{
+    /* margin: 0.1em;
+    padding: 0.1em; */
+    font-size: 1em;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* DSA Sheet Container : Section 1 CSS */
+.practice-dsa-sheet-container{
+    margin: 0.2em 0.4em;
+    min-height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.2em;
+}
+
