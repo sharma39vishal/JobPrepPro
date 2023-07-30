@@ -20,11 +20,11 @@ export default function page() {
         </div>
       </div>
       <div className="practice-core-subject-container">
-        <CoreSubject subjectName={'Data Structure And Algorithms'} />
-        <CoreSubject subjectName={'Operating System'} />
-        <CoreSubject subjectName={'Database Management System'} />
-        <CoreSubject subjectName={'Object Oriented Programming'} />
-        <CoreSubject subjectName={'Computer Networks'} />
+        <CoreSubject pageLink={'/achievers'} subjectName={'Data Structure And Algorithms'} />
+        <CoreSubject pageLink={'/achievers'} subjectName={'Operating System'} />
+        <CoreSubject pageLink={'/achievers'} subjectName={'Database Management System'} />
+        <CoreSubject pageLink={'/achievers'} subjectName={'Object Oriented Programming'} />
+        <CoreSubject pageLink={'/achievers'} subjectName={'Computer Networks'} />
       </div>
     </div>
   )
