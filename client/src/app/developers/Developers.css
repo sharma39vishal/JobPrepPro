@@ -8,20 +8,27 @@
   }
 
   .container{
-    width: 98%;
-    margin: 1%;
+    /* width: 98%; */
+    /* margin: 1%; */
     background: #BCCEF8;
     padding: 1em 0em;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .photo{
     margin: 1em;
-    width: 29em;
+    /* width: 29em; */
     height: 65vh;
     background: #FAF4B7;
   }
-
+.developer{
+  width: 27%;
+  /* padding: 1%; */
+  /* margin: 1%; */
+}
   h3{
     margin-left: 5px;
     margin-bottom: 5px;
@@ -30,7 +37,7 @@
 
   .description{
     margin: 1em;
-    width: 29em;
+    /* width: 29em; */
     height: 15vh;
     background: #C9F4AA;
     padding: 1em;
