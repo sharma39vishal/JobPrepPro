@@ -6,7 +6,7 @@
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
     padding-top: 16vh;
-    background-color: #BCCEF8;
+    background-color: #B8E8FC;
 }
 
 /* DSA Sheet Section Starts Here */
@@ -50,7 +50,21 @@
     margin: 0.2em 0.4em;
     min-height: 25vh;
     display: flex;
+    /* align-items: center; */
+    justify-content: center;
     flex-wrap: wrap;
     padding: 0 0.2em;
 }
 
+/* Responsive CSS for Dsa Sheet */
+
+/* Core Subjects Section Starts Here */
+.practice-core-subject-container{
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: #000; */
+    /* border: 1px solid tomato; */
+}

@@ -1,0 +1,19 @@
+/* Core Subject CSS */
+.core-subject-main-container{
+    /* border: 1px solid black; */
+    margin: 0.3em 0.3em;
+    padding: 0.6em;
+    background-color: #BCCEF8;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.core-subject-layout{
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.core-subject-layout a{
+    text-decoration: none;
+    color: #000;
+}
