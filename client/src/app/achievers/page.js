@@ -8,7 +8,7 @@ export default function page() {
   const [content, setcontent] = useState([]);
 
   const callapi = async () => {
-    axios.get("http://localhost:5000/achiver/")
+    axios.get("/achiver/")
       .then((res) => {
         setcontent(res.data);
       })
@@ -27,7 +27,7 @@ export default function page() {
           return <SingleAchiever achiever_image={item.images}
             achiever_name={item.name} achiver_designation={item.designation}
             achiever_story={item.discription}
-            connect={item.connect} />
+            connect={item.connect} id={item._id}/>
         })}
       </div>
     </div>

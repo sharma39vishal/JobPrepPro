@@ -89,7 +89,7 @@ passport.use(
             httpOnly: true,
             secure: true,
             sameSite: "none",
-        }).status(200).redirect("/");
+        }).status(200).redirect("http://localhost:3000/");
       }
       else{
         // save a new user account to the db
@@ -126,7 +126,7 @@ passport.use(
             httpOnly: true,
             secure: true,
             sameSite: "none",
-        }).status(200).redirect("/");
+        }).status(200).redirect("http://localhost:3000/");
       }
       // console.log(req.user._json.name);
       // console.log(req.user._json.email);

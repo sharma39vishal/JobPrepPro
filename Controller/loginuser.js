@@ -7,7 +7,6 @@ const jwt_decode=require("jwt-decode");
 exports.loginuser= async (req, res) => {
     try {
         const { usernameoremail,password } = req.body;
-        // console.log(req.body)
         if(!usernameoremail||!password){
             return res.status(400).json({ errorMessage: "Please enter all required fields." });
         }
