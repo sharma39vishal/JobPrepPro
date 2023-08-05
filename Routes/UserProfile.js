@@ -5,7 +5,8 @@ const jwt_decode=require("jwt-decode");
 const Recordlog = require("../Controller/logs");
 
 router.get("/:id",(req, res) => {
-    User.findById(req.params.id)
+    // console.log("USERNAME :",req.params.id)
+    User.findOne({username:req.params.id})
         .then((user) => res.json(user))
         .catch((err) => res.status(400).json("Error: " + err));
 });

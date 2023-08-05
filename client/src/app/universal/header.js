@@ -51,7 +51,7 @@ export default function Header() {
               </div>
              {avatardropdown? 
               <div className='avatar-dropdown'>
-                <a href='/userprofile'>Profile</a>
+                <a href={`/userprofile/${UserDetails.username}`}>Profile</a>
                 <a onClick={()=>{logout()}}>LogOut</a>
               </div>:null}
 

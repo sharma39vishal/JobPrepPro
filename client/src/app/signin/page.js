@@ -80,10 +80,10 @@ export default function page() {
               <h1 style={{color:"#000"}}>Create Account</h1>
               <h1 style={{color:"#000"}}>Sign Up</h1>
               <div className="social-container">
-                <a href="#" className="social">
+                <a href="/auth/google" className="social">
                 <Image width={"24"} height={"24"} src="/images/google.png" />
                 </a>
-                <a href="#" className="social">
+                <a href="https://github.com/login/oauth/authorize?client_id=3d9f7d55ad5a114d9913" className="social">
                   <Image width={"24"} height={"24"} src="/images/github.png" />
                 <i className="fa-brands fa-github"></i>
                 </a>
@@ -103,10 +103,10 @@ export default function page() {
             <div className='form'>
               <h1 style={{color:"#000"}}>Sign in</h1>
               <div className="social-container">
-                <a href="#" className="social">
+                <a href="http://localhost:5000/auth/google" className="social">
                 <Image width={"24"} height={"24"} src="/images/google.png" />
                 </a>
-                <a href="#" className="social">
+                <a href="https://github.com/login/oauth/authorize?client_id=3d9f7d55ad5a114d9913" className="social">
                   <Image width={"24"} height={"24"} src="/images/github.png" />
                 <i className="fa-brands fa-github"></i>
                 </a>
