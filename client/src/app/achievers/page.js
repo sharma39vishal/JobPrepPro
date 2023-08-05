@@ -8,7 +8,7 @@ export default function page() {
   const [content, setcontent] = useState([]);
 
   const callapi = async () => {
-    axios.get("http://localhost:5000/achiver/")
+    axios.get("/achiver/")
       .then((res) => {
         setcontent(res.data);
       })

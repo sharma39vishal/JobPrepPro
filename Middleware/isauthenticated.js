@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 function isauthenticated(req, res, next) {
   try {
     const token = req.cookies.token;
+    // console.log("MIDDLEWARE :",token);
     if (!token) return res.status(401).json({ errorMessage: "Unauthorized" });
     // decode the token to get the expiration date
     const decoded = jwt.decode(token);

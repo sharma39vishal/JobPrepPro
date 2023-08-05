@@ -5,13 +5,17 @@ const jwt_decode=require("jwt-decode");
 const Recordlog = require("./logs");
 
 exports.createnewuser= async (req, res) => {
+    // console.log("Register :",req.body);
     try {
       const { username,email,password } = req.body;
       if (!username || !email || !password)
         return res.status(400).json({ errorMessage: "Please enter all required fields." });
     var passwordregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$/
-    if (!passwordregex.test(password))
+    // if (!passwordregex.test(password))
+    //     return res.status(400).json({ errorMessage: "Password Minimum eight and maximum 10 characters, at least one uppercase letter, one lowercase letter, one number and one special character", });
+    if(password.length<8){
         return res.status(400).json({ errorMessage: "Password Minimum eight and maximum 10 characters, at least one uppercase letter, one lowercase letter, one number and one special character", });
+    }
     var emailregex=/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
     if (!emailregex.test(email)){
         return res.status(400).json({ errorMessage: "Please enter Vaild Email", });
