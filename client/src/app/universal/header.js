@@ -21,27 +21,27 @@ export default function Header() {
         <div className="nav-items-container">
           <div className="navbar-left-items">
             <div className="nav-left-single-item">
-              <a href="/jobopening">Job Openings</a>
+              <Link href="/jobopening">Job Openings</Link>
             </div>
             <div className="nav-left-single-item">
-              <a href="/practice">Practice</a>
+              <Link href="/practice">Practice</Link>
             </div>
             <div className="nav-left-single-item">
-              <a href="/discussion">Discussion</a>
+              <Link href="/discussion">Discussion</Link>
             </div>
             <div className="nav-left-single-item">
-              <a href="/roadmap">Roadmap</a>
+              <Link href="/roadmap">Roadmap</Link>
             </div>
             <div className="nav-left-single-item">
-              <a href="/achievers">Achievers</a>
+              <Link href="/achievers">Achievers</Link>
             </div>
           </div>
           <div className="navbar-logo">
-            <a href="/home"><img src="https://icon-library.com/images/icon-logo-png/icon-logo-png-11.jpg" alt="Loading Error" /></a>
+            <Link href="/home"><img src="https://icon-library.com/images/icon-logo-png/icon-logo-png-11.jpg" alt="Loading Error" /></Link>
           </div>
           <div className="navbar-right-items">
             <div className="nav-right-developer">
-              <a href="/developers">Developers</a>
+              <Link href="/developers">Developers</Link>
             </div>
             <div className="nav-right-signin">
 
