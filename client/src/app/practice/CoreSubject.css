@@ -1,5 +1,5 @@
 /* Core Subject CSS */
-.core-subject-main-container{
+.core-subject-main-container {
     /* border: 1px solid black; */
     margin: 0.3em 0.3em;
     padding: 0.6em;
@@ -8,12 +8,16 @@
     cursor: pointer;
 }
 
-.core-subject-layout{
+.core-subject-main-container:hover {
+    background-color: #89a6ea;
+}
+
+.core-subject-layout {
     font-size: 1.1em;
     font-weight: 400;
 }
 
-.core-subject-layout a{
+.core-subject-layout a {
     text-decoration: none;
     color: #000;
 }
