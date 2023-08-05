@@ -1,9 +1,26 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios';
 import './Practice.css'
 import DsaSheet from './DsaSheet'
 import CoreSubject from './CoreSubject'
 
 export default function page() {
+  const [content, setcontent] = useState([]);
+  const callapi = async () => {
+    axios.get("/questions/")
+      .then((res) => {
+        setcontent(res.data);
+        console.log("QUESTION :",res.data);
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }
+  useEffect(() => {
+    callapi();
+  }, [])
+
   return (
     <div className='practice-main'>
       <div className="practice-dsa-sheet">
