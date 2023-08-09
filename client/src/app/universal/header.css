@@ -1,7 +1,7 @@
 /* Parent Header Container */
 
 .header-main{
-    height: 16vh;
+    height: 13vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
 }
 
 .navbar-logo img{
-    height: 13vh;
+    height: 11vh;
 }
 
 /* Navbar Right Side Items */
