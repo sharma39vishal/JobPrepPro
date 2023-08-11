@@ -1,9 +1,11 @@
 import React from 'react'
-import './Discuss.css'
+import './Discussion.css'
 export default function SingleLiveDiscuss(props) {
   return (
-    <div className="live-single-discuss-container">
-        {props.discussImage}
+    <div onClick={() => {
+      props.setimage(props.discussImage)
+    }} className="live-discussion-description">
+      <h3>{props.discussDescription}</h3>
     </div>
   )
 }
