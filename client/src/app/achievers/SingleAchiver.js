@@ -23,7 +23,7 @@ export default function SingleAchiever(props) {
           </div>
           <div className="achiever-more">
             <div className="connect-to-achiever">
-              <Link href={props.connect} target='_blank'>Connect</Link>
+              <Link href={props.connect} target='_blank'>linked</Link>
               {/* <img src="https://cdn-icons-png.flaticon.com/512/3128/3128219.png" alt="" /> */}
               <img src="https://cdn-icons-png.flaticon.com/512/3536/3536569.png" alt="" />
             </div>
