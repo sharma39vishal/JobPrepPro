@@ -38,11 +38,6 @@ export default function page() {
           </div>
         </div>
       </div>
-
-      {/* Section 2 Discussion Page */}
-      <div className="discussion-section-2-container">
-
-      </div>
     </div>
   )
 }

@@ -84,9 +84,3 @@
     border-radius: 0.4em;
     cursor: pointer;
 }
-
-/* Section 2 Starts here */
-.discussion-section-2-container {
-    min-height: 87vh;
-    border: 1px solid red;
-}
