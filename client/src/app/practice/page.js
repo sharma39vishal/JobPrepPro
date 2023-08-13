@@ -4,6 +4,8 @@ import axios from 'axios';
 import './Practice.css'
 import DsaSheet from './DsaSheet'
 import CoreSubject from './CoreSubject'
+import PracticeSingle from './PracticeSingle';
+import Link from 'next/link';
 
 export default function page() {
   const [content, setcontent] = useState([]);
@@ -11,7 +13,7 @@ export default function page() {
     axios.get("/questions/")
       .then((res) => {
         setcontent(res.data);
-        console.log("QUESTION :",res.data);
+        console.log("QUESTION :", res.data);
       })
       .catch((err) => {
         console.log(err)
@@ -26,7 +28,7 @@ export default function page() {
       <div className="practice-dsa-sheet">
         <div className="dsa-sheet-heading">
           <h4>DSA Sheet</h4>
-          <h5>See All</h5>
+          <Link href=''><h5>See All</h5></Link>
         </div>
         <div className="practice-dsa-sheet-container">
           <DsaSheet creatorImage={'https://media.licdn.com/dms/image/C4D22AQGIXuAu2GS6rQ/feedshare-shrink_800/0/1673000670313?e=1693440000&v=beta&t=ztxyvEpfNokyoXnXC6itQxrsdR7usq_PAFRxEKwsFOE'} dsasheet_name={'Love Babbar'} />
@@ -37,11 +39,54 @@ export default function page() {
         </div>
       </div>
       <div className="practice-core-subject-container">
-        <CoreSubject pageLink={'/achievers'} subjectName={'Data Structure And Algorithms'} />
-        <CoreSubject pageLink={'/achievers'} subjectName={'Operating System'} />
-        <CoreSubject pageLink={'/achievers'} subjectName={'Database Management System'} />
-        <CoreSubject pageLink={'/achievers'} subjectName={'Object Oriented Programming'} />
-        <CoreSubject pageLink={'/achievers'} subjectName={'Computer Networks'} />
+        <div className="core-subject-heading">
+          <h4>Practice Problems</h4>
+          {/* <Link href=''><h5>See All</h5></Link> */}
+        </div>
+        <div className="core-subjects-names">
+          <CoreSubject pageLink={'/achievers'} subjectName={'Data Structure And Algorithms'} />
+          <CoreSubject pageLink={'/achievers'} subjectName={'Operating System'} />
+          <CoreSubject pageLink={'/achievers'} subjectName={'Database Management System'} />
+          <CoreSubject pageLink={'/achievers'} subjectName={'Object Oriented Programming'} />
+          <CoreSubject pageLink={'/achievers'} subjectName={'Computer Networks'} />
+        </div>
+      </div>
+      <div className="practice-questions-container">
+        <div className="practice-subject-question">
+          <div className="practice-title-heading">
+            <h3 className='title-one'>Title</h3>
+            <h3 className='title-two'>Acceptance</h3>
+            <h3 className='title-three'>Difficulty</h3>
+          </div>
+          <div className="practice-description-questions">
+            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
+            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
+            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
+            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
+            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
+            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
+            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
+            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
+            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
+            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
+          </div>
+        </div>
+        <div className="topic-related-tags">
+          <div className="topics-title-heading">
+            <h3>Topics</h3>
+          </div>
+          <div className="different-topics">
+            
+          </div>
+        </div>
+        <div className="trending-companies">
+          <div className="trending-companies-title">
+            <h3>Companies</h3>
+          </div>
+          <div className="different-companies">
+
+          </div>
+        </div>
       </div>
     </div>
   )
