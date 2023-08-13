@@ -19,6 +19,7 @@
     width: 60%;
     font-size: 1.2em;
     font-weight: 500;
+    color: #000;
     /* border: 1px solid darkorange; */
 }
 
@@ -38,4 +39,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Tags Single */
+.dynamic-topic-tags-container{
+    background-color: #c9f4aa;
+    border-radius: 0.4em;
+    padding: 0.3em;
+    margin: 0.3em;
+}
+
+.dynamic-topic-tags-container h6{
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000;
+}
+
+/* Company Single */
+.dynamic-companies{
+    background-color: #c9f4aa;
+    border-radius: 0.4em;
+    padding: 0.3em;
+    margin: 0.3em;
+}
+
+.dynamic-companies h6{
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000;
 }
