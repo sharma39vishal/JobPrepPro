@@ -1,5 +1,5 @@
 /* Full Practice Container Access CSS */
-.practice-main{
+.practice-main {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,13 +10,13 @@
 }
 
 /* DSA Sheet Section Starts Here */
-.practice-dsa-sheet{
+.practice-dsa-sheet {
     padding: 0.2em;
     /* border: 1px solid black; */
 }
 
 /* Heading Section */
-.dsa-sheet-heading{
+.dsa-sheet-heading {
     margin: 0 1.4em;
     padding: 0.1em;
     /* border: 1px solid greenyellow; */
@@ -28,16 +28,16 @@
 }
 
 /* DSA Sheet Heading */
-.dsa-sheet-heading h4{
+.dsa-sheet-heading h4 {
     /* margin: 0.1em; */
     padding: 0.1em;
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: 400;
     cursor: pointer;
 }
 
 /* See All Heading */
-.dsa-sheet-heading h5{
+.dsa-sheet-heading h5 {
     /* margin: 0.1em;
     padding: 0.1em; */
     font-size: 1em;
@@ -45,8 +45,13 @@
     cursor: pointer;
 }
 
+.dsa-sheet-heading a {
+    text-decoration: none;
+    color: #000;
+}
+
 /* DSA Sheet Container : Section 1 CSS */
-.practice-dsa-sheet-container{
+.practice-dsa-sheet-container {
     margin: 0.2em 0.4em;
     min-height: 25vh;
     display: flex;
@@ -58,13 +63,167 @@
 
 /* Responsive CSS for Dsa Sheet */
 
+
 /* Core Subjects Section Starts Here */
-.practice-core-subject-container{
+.practice-core-subject-container {
+    margin-top: 2vh;
+    padding: 0.2em;
+}
+
+/* Heading Section */
+.core-subject-heading {
+    margin: 0 1.4em;
+    padding: 0.1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+}
+
+/* Core Subjects Heading */
+.core-subject-heading h4 {
+    /* margin: 0.1em; */
+    padding: 0.1em;
+    font-size: 2em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* See All Heading */
+.core-subject-heading h5 {
+    /* margin: 0.1em;
+    padding: 0.1em; */
+    font-size: 1em;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.core-subject-heading a {
+    text-decoration: none;
+    color: #000;
+}
+
+.core-subjects-names {
     padding: 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* background-color: #000; */
-    /* border: 1px solid tomato; */
 }
+
+/* Responsive CSS For Core Subject Container */
+
+
+/* Practice Section Containers CSS Starts Here */
+.practice-questions-container {
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* margin: 0.em; */
+    padding: 0.3em;
+}
+
+/* Practice Question Container */
+.practice-subject-question {
+    /* border: 1px solid green; */
+    width: 58vw;
+    margin: 0.1em;
+    padding: 0.1em;
+}
+
+.practice-title-heading {
+    display: flex;
+    align-items: center;
+    margin: 0.1em;
+    padding: 0.2em;
+    border-bottom: 0.1em solid grey;
+}
+
+/* Title Section */
+.practice-title-heading h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000;
+}
+
+.title-one {
+    width: 60%;
+    margin: 0.1em;
+}
+
+.title-two {
+    width: 19%;
+    margin: 0.1em;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-three {
+    width: 19%;
+    margin: 0.1em;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive practice Container */
+
+
+/* Tags Related to topics Container */
+.topic-related-tags {
+    /* border: 1px solid blue; */
+    border-radius: 0.4em;
+    width: 19vw;
+    margin: 0.1em;
+    padding: 0.1em;
+}
+
+/* Title Section */
+.topics-title-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.1em;
+    padding: 0.2em;
+}
+
+.topics-title-heading h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000;
+    margin: 0.1em;
+}
+
+/* Responsive Tags Container */
+
+
+/* Companies section Container */
+.trending-companies {
+    /* border: 1px solid red; */
+    width: 19vw;
+    margin: 0.1em;
+    padding: 0.1em;
+}
+
+.trending-companies-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.1em;
+    padding: 0.2em;
+}
+
+/* Title Section */
+.trending-companies-title h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000;
+    margin: 0.1em;
+}
+
+/* Responsive Trending Companies Container */
