@@ -3,9 +3,11 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import './Discussion.css'
 import SingleLiveDiscuss from './SingleLiveDiscuss';
+import { useRouter } from 'next/navigation';
 
 
 export default function page() {
+  const router=useRouter();
   const [content, setcontent] = useState([]);
   const callapi = async () => {
     axios.get("/discuss/")
@@ -27,16 +29,25 @@ export default function page() {
         <h2>Click below links to join Live Discussion</h2>
         <div className="live-single-discuss-container">
           <div className='discussion-description'>
-            <SingleLiveDiscuss setimage={setimage} discussDescription='Database Management System' discussImage='\images\dbmsDiscuss.png' />
-            <SingleLiveDiscuss setimage={setimage} discussDescription='Data Structure And Algo.' discussImage='\images\dsa-discuss.jpg' />
-            <SingleLiveDiscuss setimage={setimage} discussDescription='Computer Networks' discussImage='\images\networkDiscuss.png' />
-            <SingleLiveDiscuss setimage={setimage} discussDescription='Operating Systems' discussImage='\images\OsDiscuss.jpg' />
-            <SingleLiveDiscuss setimage={setimage} discussDescription='Object Oriented Programming' discussImage='\images\discussOops.png' />
+            <SingleLiveDiscuss image={image} setimage={setimage} discussDescription='Database_Management_System' discussImage='\images\dbmsDiscuss.png' />
+            <SingleLiveDiscuss image={image} setimage={setimage} discussDescription='Data_Structure_And_Algo.' discussImage='\images\dsa-discuss.jpg' />
+            <SingleLiveDiscuss image={image} setimage={setimage} discussDescription='Computer_Networks' discussImage='\images\networkDiscuss.png' />
+            <SingleLiveDiscuss image={image} setimage={setimage} discussDescription='Operating_Systems' discussImage='\images\OsDiscuss.jpg' />
+            <SingleLiveDiscuss image={image} setimage={setimage} discussDescription='Object_Oriented_Programming' discussImage='\images\discussOops.png' />
           </div>
           <div className="live-discussion-image">
             <img src={image} alt="Loading Error" />
           </div>
         </div>
+      </div>
+
+      {/* Section 2 Discussion Page */}
+      <div className="discussion-section-2-container">
+            {content.map(item=>{
+              return  (<div style={{cursor:"pointer"}} onClick={()=>{router.push(`/discussion/${item._id}`)}}>
+              <h3 className='title-one1'><p>{item.Title}</p></h3>
+          </div>)
+            })}
       </div>
     </div>
   )
