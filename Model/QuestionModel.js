@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
 const questionSchema = new mongoose.Schema({
-  images: { type: String, required: true },
   user_id: { type: String, required: true },
   Title: { type: String, required: true },
   discription: { type: String, required: false },
