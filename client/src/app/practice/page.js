@@ -6,6 +6,8 @@ import DsaSheet from './DsaSheet'
 import CoreSubject from './CoreSubject'
 import PracticeSingle from './PracticeSingle';
 import Link from 'next/link';
+import TopicTags from './TopicTags';
+import TrendCompany from './TrendCompany';
 
 export default function page() {
   const [content, setcontent] = useState([]);
@@ -76,7 +78,23 @@ export default function page() {
             <h3>Topics</h3>
           </div>
           <div className="different-topics">
-            
+            <TopicTags topicTag={'Array'} />
+            <TopicTags topicTag={'Binary Search'} />
+            <TopicTags topicTag={'Greedy'} />
+            <TopicTags topicTag={'Game Theory'} />
+            <TopicTags topicTag={'Dynamic Programming'} />
+            <TopicTags topicTag={'Linked List'} />
+            <TopicTags topicTag={'Queue'} />
+            <TopicTags topicTag={'Stack'} />
+            <TopicTags topicTag={'Binary Tree'} />
+            <TopicTags topicTag={'Graph'} />
+            <TopicTags topicTag={'Priority Queue'} />
+            <TopicTags topicTag={'Array'} />
+            <TopicTags topicTag={'Array'} />
+            <TopicTags topicTag={'BinarySearch'} />
+            <TopicTags topicTag={'Array'} />
+            <TopicTags topicTag={'Array'} />
+            <TopicTags topicTag={'Array'} />
           </div>
         </div>
         <div className="trending-companies">
@@ -84,7 +102,17 @@ export default function page() {
             <h3>Companies</h3>
           </div>
           <div className="different-companies">
-
+            <TrendCompany trendCompany={'Apple'} />
+            <TrendCompany trendCompany={'Microsoft'} />
+            <TrendCompany trendCompany={'Instagram'} />
+            <TrendCompany trendCompany={'Zomato'} />
+            <TrendCompany trendCompany={'TikTok'} />
+            <TrendCompany trendCompany={'PayPal'} />
+            <TrendCompany trendCompany={'GPay'} />
+            <TrendCompany trendCompany={'TCS'} />
+            <TrendCompany trendCompany={'Walmart'} />
+            <TrendCompany trendCompany={'Consultadd'} />
+            <TrendCompany trendCompany={'Apple'} />
           </div>
         </div>
       </div>
