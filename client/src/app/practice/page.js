@@ -59,16 +59,9 @@ export default function page() {
             <h3 className='title-three'>Difficulty</h3>
           </div>
           <div className="practice-description-questions">
-            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
-            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
-            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
-            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
-            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
-            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
-            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
-            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
-            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
-            <PracticeSingle queTitle={'Two Sum'} queAccept={'58%'} queDifficulty={'Easy'} />
+            {content.map(item=>{
+              return <PracticeSingle queTitle={item.Title} queAccept={'58%'} queDifficulty={'Easy'} quesid={item._id}/>
+            })}
           </div>
         </div>
         <div className="topic-related-tags">
