@@ -65,6 +65,11 @@ export default function page() {
               return <PracticeSingle queTitle={item.Title} queAccept={'58%'} queDifficulty={'Easy'} quesid={item._id}/>
             })}
           </div>
+          <div className="more-question-pages">
+            <img src="/images/leftArrow.png" alt="Loading Error" />
+            <h3 className="present-page">Present</h3>
+            <img src="/images/rightArrow.png" alt="Loading Error" />
+          </div>
         </div>
         <div className="topic-related-tags">
           <div className="topics-title-heading">
