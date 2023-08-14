@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-export default function page({params}){
+export default function Page({params}){
   const [content, setcontent] = useState([]);
     useEffect(() => {
         axios.get(`/discuss/${params.discuss}`)
