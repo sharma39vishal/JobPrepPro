@@ -9,7 +9,7 @@ import Link from 'next/link';
 import TopicTags from './TopicTags';
 import TrendCompany from './TrendCompany';
 
-export default function page() {
+export default function Page() {
   const [content, setcontent] = useState([]);
   const callapi = async () => {
     axios.get("/questions/")

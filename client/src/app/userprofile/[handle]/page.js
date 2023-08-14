@@ -6,7 +6,7 @@ import { redirect } from 'next/navigation';
 import axios from 'axios';
 import DeleteAccount from './DeleteAccount';
 
-export default function page({params}) {
+export default function Page({params}) {
   const [UserDetails, setUserDetails] = useState(null)
   const [delacc, setdelacc] = useState(false);
 //   console.log("USERNAME ",params.handle)

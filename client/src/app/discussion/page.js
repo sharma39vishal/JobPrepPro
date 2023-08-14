@@ -6,7 +6,7 @@ import SingleLiveDiscuss from './SingleLiveDiscuss';
 import { useRouter } from 'next/navigation';
 
 
-export default function page() {
+export default function Page() {
   const router=useRouter();
   const [content, setcontent] = useState([]);
   const callapi = async () => {

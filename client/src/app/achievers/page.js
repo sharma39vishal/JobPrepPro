@@ -4,7 +4,7 @@ import SingleAchiever from './SingleAchiver'
 import './Achievers.css'
 import axios from 'axios';
 
-export default function page() {
+export default function Page() {
   const [content, setcontent] = useState([]);
 
   const callapi = async () => {
