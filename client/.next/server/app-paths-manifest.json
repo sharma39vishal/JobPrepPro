@@ -1,19 +1,19 @@
 {
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
+  "/changepassword/page": "app/changepassword/page.js",
   "/achievers/page": "app/achievers/page.js",
   "/developers/page": "app/developers/page.js",
-  "/changepassword/page": "app/changepassword/page.js",
   "/discussion/page": "app/discussion/page.js",
   "/forgetpassword/page": "app/forgetpassword/page.js",
   "/home/page": "app/home/page.js",
   "/jobopening/page": "app/jobopening/page.js",
-  "/practice/page": "app/practice/page.js",
   "/roadmap/page": "app/roadmap/page.js",
   "/signin/page": "app/signin/page.js",
-  "/discussion/[discuss]/page": "app/discussion/[discuss]/page.js",
+  "/practice/page": "app/practice/page.js",
   "/achievers/[ReadMore]/page": "app/achievers/[ReadMore]/page.js",
   "/groups/[group]/page": "app/groups/[group]/page.js",
+  "/discussion/[discuss]/page": "app/discussion/[discuss]/page.js",
   "/practice/[question]/page": "app/practice/[question]/page.js",
   "/userprofile/[handle]/page": "app/userprofile/[handle]/page.js"
 }

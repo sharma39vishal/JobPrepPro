@@ -1,6 +1,6 @@
 'use client'
 import React, { useContext, useState } from 'react'
-import './Header.css'
+import './header.css'
 import AuthContext from '../Context/authContext'
 import axios from 'axios';
 import Image from 'next/image';

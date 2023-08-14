@@ -17,7 +17,15 @@
       "static/chunks/846-7aea53043b46cc5c.js",
       "static/chunks/394-571d2f04950dbe29.js",
       "static/css/658d96fac6ee232a.css",
-      "static/chunks/app/layout-b2c130abc1e4a955.js"
+      "static/chunks/app/layout-423e04113c97224b.js"
+    ],
+    "/changepassword/page": [
+      "static/chunks/webpack-8b226520aa6c4ad9.js",
+      "static/chunks/bce60fc1-a2f66b650325b20f.js",
+      "static/chunks/961-481f87b7af665a9c.js",
+      "static/chunks/main-app-ebf00f1245849225.js",
+      "static/css/e1e906bde469435b.css",
+      "static/chunks/app/changepassword/page-2790c11ecf7caf2d.js"
     ],
     "/achievers/page": [
       "static/chunks/webpack-8b226520aa6c4ad9.js",
@@ -36,14 +44,6 @@
       "static/chunks/main-app-ebf00f1245849225.js",
       "static/css/2b4add7f9bf8c90f.css",
       "static/chunks/app/developers/page-ebbba35c03d57e6c.js"
-    ],
-    "/changepassword/page": [
-      "static/chunks/webpack-8b226520aa6c4ad9.js",
-      "static/chunks/bce60fc1-a2f66b650325b20f.js",
-      "static/chunks/961-481f87b7af665a9c.js",
-      "static/chunks/main-app-ebf00f1245849225.js",
-      "static/css/e1e906bde469435b.css",
-      "static/chunks/app/changepassword/page-2790c11ecf7caf2d.js"
     ],
     "/discussion/page": [
       "static/chunks/webpack-8b226520aa6c4ad9.js",
@@ -79,16 +79,6 @@
       "static/css/e8f7b741a364bc85.css",
       "static/chunks/app/jobopening/page-803a364f522a2da8.js"
     ],
-    "/practice/page": [
-      "static/chunks/webpack-8b226520aa6c4ad9.js",
-      "static/chunks/bce60fc1-a2f66b650325b20f.js",
-      "static/chunks/961-481f87b7af665a9c.js",
-      "static/chunks/main-app-ebf00f1245849225.js",
-      "static/chunks/348-0f428f4d6d797a05.js",
-      "static/chunks/846-7aea53043b46cc5c.js",
-      "static/css/f923dfdcbd96b6ce.css",
-      "static/chunks/app/practice/page-8f7f14796699c80f.js"
-    ],
     "/roadmap/page": [
       "static/chunks/webpack-8b226520aa6c4ad9.js",
       "static/chunks/bce60fc1-a2f66b650325b20f.js",
@@ -107,13 +97,15 @@
       "static/css/10caad124f28f4a7.css",
       "static/chunks/app/signin/page-703d2609ae1655d3.js"
     ],
-    "/discussion/[discuss]/page": [
+    "/practice/page": [
       "static/chunks/webpack-8b226520aa6c4ad9.js",
       "static/chunks/bce60fc1-a2f66b650325b20f.js",
       "static/chunks/961-481f87b7af665a9c.js",
       "static/chunks/main-app-ebf00f1245849225.js",
       "static/chunks/348-0f428f4d6d797a05.js",
-      "static/chunks/app/discussion/[discuss]/page-cf0520aad4e2cd85.js"
+      "static/chunks/846-7aea53043b46cc5c.js",
+      "static/css/f923dfdcbd96b6ce.css",
+      "static/chunks/app/practice/page-8f7f14796699c80f.js"
     ],
     "/achievers/[ReadMore]/page": [
       "static/chunks/webpack-8b226520aa6c4ad9.js",
@@ -134,6 +126,14 @@
       "static/chunks/323-a8566945dd672849.js",
       "static/css/a93f95199b5f3657.css",
       "static/chunks/app/groups/[group]/page-8233f69131d287bd.js"
+    ],
+    "/discussion/[discuss]/page": [
+      "static/chunks/webpack-8b226520aa6c4ad9.js",
+      "static/chunks/bce60fc1-a2f66b650325b20f.js",
+      "static/chunks/961-481f87b7af665a9c.js",
+      "static/chunks/main-app-ebf00f1245849225.js",
+      "static/chunks/348-0f428f4d6d797a05.js",
+      "static/chunks/app/discussion/[discuss]/page-cf0520aad4e2cd85.js"
     ],
     "/practice/[question]/page": [
       "static/chunks/webpack-8b226520aa6c4ad9.js",
