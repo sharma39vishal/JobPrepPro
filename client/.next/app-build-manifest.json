@@ -1,10 +1,10 @@
 {
   "pages": {
-    "/page": [
+    "/achievers/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/css/app/achievers/page.css",
+      "static/chunks/app/achievers/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -12,23 +12,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/discussion/page": [
+    "/roadmap/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/discussion/page.css",
-      "static/chunks/app/discussion/page.js"
+      "static/css/app/roadmap/page.css",
+      "static/chunks/app/roadmap/page.js"
     ],
-    "/achievers/page": [
+    "/developers/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/achievers/page.css",
-      "static/chunks/app/achievers/page.js"
-    ],
-    "/achievers/[ReadMore]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/achievers/[ReadMore]/page.css",
-      "static/chunks/app/achievers/[ReadMore]/page.js"
+      "static/css/app/developers/page.css",
+      "static/chunks/app/developers/page.js"
     ]
   }
 }

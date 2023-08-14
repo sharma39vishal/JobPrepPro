@@ -61,8 +61,8 @@ export default function Page() {
             <h3 className='title-three'>Difficulty</h3>
           </div>
           <div className="practice-description-questions">
-            {content.map(item=>{
-              return <PracticeSingle queTitle={item.Title} queAccept={'58%'} queDifficulty={'Easy'} quesid={item._id}/>
+            {content.map((item,index)=>{
+              return <PracticeSingle key={index} queTitle={item.Title} queAccept={'58%'} queDifficulty={'Easy'} quesid={item._id}/>
             })}
           </div>
           <div className="more-question-pages">

@@ -7,7 +7,7 @@ export default function Page() {
             <form className="form">
                 <p className="heading">Forget Password</p>
 
-                <p className="instruction">Enter the email associated with your account and we'll send an email to reset your password.</p>
+                <p className="instruction">Enter the email associated with your account and well send an email to reset your password.</p>
 
                 <div className="field">
                     <svg className="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">

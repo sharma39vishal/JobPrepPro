@@ -1,6 +1,6 @@
 {
-  "/page": "app/page.js",
-  "/discussion/page": "app/discussion/page.js",
-  "/achievers/page": "app/achievers/page.js",
-  "/achievers/[ReadMore]/page": "app/achievers/[ReadMore]/page.js"
+  "/roadmap/page": "app/roadmap/page.js",
+  "/developers/page": "app/developers/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/achievers/page": "app/achievers/page.js"
 }
