@@ -9,7 +9,7 @@ import Link from 'next/link';
 import TopicTags from './TopicTags';
 import TrendCompany from './TrendCompany';
 
-export default function page() {
+export default function Page() {
   const [content, setcontent] = useState([]);
   const callapi = async () => {
     axios.get("/questions/")
@@ -61,8 +61,8 @@ export default function page() {
             <h3 className='title-three'>Difficulty</h3>
           </div>
           <div className="practice-description-questions">
-            {content.map(item=>{
-              return <PracticeSingle queTitle={item.Title} queAccept={'58%'} queDifficulty={'Easy'} quesid={item._id}/>
+            {content.map((item,index)=>{
+              return <PracticeSingle key={index} queTitle={item.Title} queAccept={'58%'} queDifficulty={'Easy'} quesid={item._id}/>
             })}
           </div>
           <div className="more-question-pages">

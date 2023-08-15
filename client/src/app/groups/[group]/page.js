@@ -64,7 +64,7 @@ const Groups = ({params}) => {
   </header>
 <div className='max-chat-size'>
   <main class="msger-chat">
-  {messages.map((message, index) => (
+  {messages?.map((message, index) => (
           <div class="msger-chat" key={index}>
             {message.user===UserDetails.username?<RightMessage message={message.text} date={message.date} name={message.user}/>:<LeftMessage message={message.text} date={message.date} name={message.user}/>}
              {/* <span>{message.text}</span> */}

@@ -6,7 +6,7 @@ import SingleLiveDiscuss from './SingleLiveDiscuss';
 import { useRouter } from 'next/navigation';
 
 
-export default function page() {
+export default function Page() {
   const router=useRouter();
   const [content, setcontent] = useState([]);
   const callapi = async () => {
@@ -43,8 +43,8 @@ export default function page() {
 
       {/* Section 2 Discussion Page */}
       <div className="discussion-section-2-container">
-            {content.map(item=>{
-              return  (<div style={{cursor:"pointer"}} onClick={()=>{router.push(`/discussion/${item._id}`)}}>
+            {content.map((item,index)=>{
+              return  (<div key={index} style={{cursor:"pointer"}} onClick={()=>{router.push(`/discussion/${item._id}`)}}>
               <h3 className='title-one1'><p>{item.Title}</p></h3>
           </div>)
             })}

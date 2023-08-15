@@ -6,7 +6,7 @@ import axios from 'axios'
 import Image from 'next/image'
 import AuthContext from '../Context/authContext'
 
-export default function page() {
+export default function Page() {
   const { UserDetails,call_again_getuser,setcall_again_getuser} = useContext(AuthContext);
   
     useEffect(() => {

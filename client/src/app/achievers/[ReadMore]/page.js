@@ -4,7 +4,7 @@ import './readMore.css'
 import React, { useEffect, useState } from 'react'
 // import Link from 'next/link';
 
-export default function page({ params }) {
+export default function Page({ params }) {
   const [readMoreData, setreadMoreData] = useState(null);
   useEffect(() => {
     axios.get(`/achiver/${params.ReadMore}`)

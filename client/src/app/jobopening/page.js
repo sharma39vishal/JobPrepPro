@@ -1,17 +1,17 @@
 import React from 'react'
 import './Jobopening.css'
-export default function page() {
+export default function Page() {
   return (
     <div className="outer-box">
       <div className="container">
         <div className="upper-txt">
-          <p>We're Still</p>
+          <p>Were Still</p>
         </div>
         <div className="middle-txt">
           <p>COMING SOON...</p>
         </div>
         <div className="lower-txt">
-          <p>We're going to launch our website very soon. Stay tune...</p>
+          <p>Were going to launch our website very soon. Stay tune...</p>
         </div>
         <div className="time-container" >
           <div className="time">
