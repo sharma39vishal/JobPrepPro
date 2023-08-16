@@ -7,27 +7,27 @@ const nextConfig = {
         return [      
           {
             source: "/auth/:path*",
-            destination: "https://jobpreppro-backend.onrender.com/auth/:path*",
+            destination: "http://localhost:5000/auth/:path*",
           },
           {
             source: "/discuss/:path*",
-            destination: "https://jobpreppro-backend.onrender.com/discuss/:path*",
+            destination: "http://localhost:5000/discuss/:path*",
           },
           {
             source: "/questions/:path*",
-            destination: "https://jobpreppro-backend.onrender.com/questions/:path*",
+            destination: "http://localhost:5000/questions/:path*",
           },
           {
             source: "/achiver/:path*",
-            destination: "https://jobpreppro-backend.onrender.com/achiver/:path*",
+            destination: "http://localhost:5000/achiver/:path*",
           },
           {
             source: "/profile/:path*",
-            destination: "https://jobpreppro-backend.onrender.com/profile/:path*",
+            destination: "http://localhost:5000/profile/:path*",
           },
           {
             source: "/logs/:path*",
-            destination: "https://jobpreppro-backend.onrender.com/logs/:path*",
+            destination: "http://localhost:5000/logs/:path*",
           },
         ];
       },

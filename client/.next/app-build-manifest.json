@@ -12,17 +12,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/achievers/page": [
+    "/practice/[question]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/achievers/page.css",
-      "static/chunks/app/achievers/page.js"
+      "static/css/app/practice/[question]/page.css",
+      "static/chunks/app/practice/[question]/page.js"
     ],
-    "/achievers/[ReadMore]/page": [
+    "/practice/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/achievers/[ReadMore]/page.css",
-      "static/chunks/app/achievers/[ReadMore]/page.js"
+      "static/css/app/practice/page.css",
+      "static/chunks/app/practice/page.js"
     ]
   }
 }
