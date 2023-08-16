@@ -1,9 +1,5 @@
 {
   "/page": "app/page.js",
-  "/developers/page": "app/developers/page.js",
-  "/achievers/page": "app/achievers/page.js",
-  "/signin/page": "app/signin/page.js",
   "/practice/page": "app/practice/page.js",
-  "/jobopening/page": "app/jobopening/page.js",
-  "/userprofile/[handle]/page": "app/userprofile/[handle]/page.js"
+  "/practice/[question]/page": "app/practice/[question]/page.js"
 }
