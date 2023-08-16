@@ -12,17 +12,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/practice/[question]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/practice/[question]/page.css",
-      "static/chunks/app/practice/[question]/page.js"
-    ],
     "/practice/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/practice/page.css",
       "static/chunks/app/practice/page.js"
+    ],
+    "/practice/[question]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/practice/[question]/page.css",
+      "static/chunks/app/practice/[question]/page.js"
     ]
   }
 }
