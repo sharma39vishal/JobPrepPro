@@ -37,7 +37,7 @@ export default function Header() {
             </div>
           </div>
           <div className="navbar-logo">
-            <Link href="/home"><img src="https://icon-library.com/images/icon-logo-png/icon-logo-png-11.jpg" alt="Loading Error" /></Link>
+            <Link href="/"><img src="https://icon-library.com/images/icon-logo-png/icon-logo-png-11.jpg" alt="Loading Error" /></Link>
           </div>
           <div className="navbar-right-items">
             <div className="nav-right-developer">

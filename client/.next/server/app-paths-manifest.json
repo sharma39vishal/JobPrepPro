@@ -1,5 +1,10 @@
 {
   "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/achievers/page": "app/achievers/page.js",
+  "/discussion/page": "app/discussion/page.js",
   "/practice/page": "app/practice/page.js",
-  "/practice/[question]/page": "app/practice/[question]/page.js"
+  "/jobopening/page": "app/jobopening/page.js",
+  "/developers/page": "app/developers/page.js",
+  "/signin/page": "app/signin/page.js"
 }

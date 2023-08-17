@@ -1,16 +1,28 @@
 {
   "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/layout": [
+    "/achievers/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/css/app/achievers/page.css",
+      "static/chunks/app/achievers/page.js"
+    ],
+    "/discussion/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/discussion/page.css",
+      "static/chunks/app/discussion/page.js"
     ],
     "/practice/page": [
       "static/chunks/webpack.js",
@@ -18,11 +30,23 @@
       "static/css/app/practice/page.css",
       "static/chunks/app/practice/page.js"
     ],
-    "/practice/[question]/page": [
+    "/jobopening/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/practice/[question]/page.css",
-      "static/chunks/app/practice/[question]/page.js"
+      "static/css/app/jobopening/page.css",
+      "static/chunks/app/jobopening/page.js"
+    ],
+    "/developers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/developers/page.css",
+      "static/chunks/app/developers/page.js"
+    ],
+    "/signin/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/signin/page.css",
+      "static/chunks/app/signin/page.js"
     ]
   }
 }
