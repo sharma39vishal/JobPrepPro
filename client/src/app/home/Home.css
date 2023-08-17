@@ -131,6 +131,20 @@
 }
 
 .footer{
-    height: 10em;
-    background-color: black;
+    height: 7em;
+    background-color: #C9F4AA;
+}
+
+.footer-upper-text{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding: .6em;
+}
+
+.footer-lower-text{
+    color: black;
+    text-align: center;
+
 }
