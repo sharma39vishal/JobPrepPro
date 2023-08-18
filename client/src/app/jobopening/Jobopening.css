@@ -1,4 +1,4 @@
-.outer-box {
+.jobopening-outer-box {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -48,7 +48,7 @@
   max-width: 8em;
 }
 
-button {
+.jobopening-outer-box button {
   max-width: 20em;
   display: flex;
   padding: 0.5rem 1.4rem;

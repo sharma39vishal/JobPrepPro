@@ -24,7 +24,7 @@ export default function Page({params}) {
   
   
   return (
-    <div className="outer-box">
+    <div className="userprofile-outer-box">
       <div className="modal">
         <Image width={"150"} height={"150"}  src={UserDetails?.profilePic} alt="User image" className="image" />
         <div className="text">

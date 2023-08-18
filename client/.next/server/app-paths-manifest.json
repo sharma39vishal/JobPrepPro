@@ -1,7 +1,7 @@
 {
-  "/achievers/page": "app/achievers/page.js",
-  "/ChangePassword/page": "app/ChangePassword/page.js",
   "/jobopening/page": "app/jobopening/page.js",
-  "/ForgetPassword/page": "app/ForgetPassword/page.js",
-  "/signin/page": "app/signin/page.js"
+  "/discussion/page": "app/discussion/page.js",
+  "/practice/page": "app/practice/page.js",
+  "/achievers/page": "app/achievers/page.js",
+  "/groups/[group]/page": "app/groups/[group]/page.js"
 }

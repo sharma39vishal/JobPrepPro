@@ -34,7 +34,7 @@ export default function JobOpening() {
   }, []);
 
   return (
-    <div className="outer-box">
+    <div className="jobopening-outer-box">
       <div className="container">
       <div className="upper-txt">
            <p>We're Still</p>
