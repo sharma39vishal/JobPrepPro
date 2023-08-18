@@ -19,19 +19,18 @@ router.get("/:id",(req, res) => {
         .catch((err) => res.status(400).json("Error: " + err));
 });
 
-//Route to add a new post
-router.post("/addquestion",isauthenticated,(req, res) => {
+// Route to add a new post
+router.post("/addquestion",(req, res) => {
     //Retrieve data for post
-    const {user_id,Title,discription,tags} = req.body;
+    const {user_id,Title,difficulty,discription,input1,output1,input2,output2,constraints,tags} = req.body;
     //Create a new Post and save it to DB
     // console.log(req.body);
-    const newQuestion = new Question({user_id,Title,discription,Comments:[],otherdetails:[],tags,created_at:new Date(),updated_at:new Date()});
+    const newQuestion = new Question({user_id,Title,difficulty,discription,input1,output1,input2,output2,constraints,Comments:[],otherdetails:[],tags,created_at:new Date(),updated_at:new Date()});
     // Save the new post
     Recordlog({user_id,ip:req.ip,what:"New Question Added"})
     newQuestion.save()
         .then(() => res.json("Question Added!"))
         .catch((err) => res.status(400).json("Error: " + err));
 });
-
 
 module.exports = router;

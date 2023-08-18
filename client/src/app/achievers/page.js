@@ -4,7 +4,7 @@ import SingleAchiever from './SingleAchiver'
 import './Achievers.css'
 import axios from 'axios';
 
-export default function page() {
+export default function Page() {
   const [content, setcontent] = useState([]);
 
   const callapi = async () => {
@@ -23,8 +23,8 @@ export default function page() {
   return (
     <div className='achievers-main'>
       <div className="achievers-section-1-container">
-        {content.map((item) => {
-          return <SingleAchiever achiever_image={item.images}
+        {content.map((item,index) => {
+          return <SingleAchiever key={index} achiever_image={item.images}
             achiever_name={item.name} achiver_designation={item.designation}
             achiever_story={item.discription}
             connect={item.connect} id={item._id}/>

@@ -1,8 +1,26 @@
-.footer-main {
-    font-size: 1.3em;
-    height: 30vh;
-    border: 2px solid yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer {
+    height: 7em;
+    width: 100vw;
+    background-color: #C9F4AA;
+}
+
+.footer-upper-text {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0.6em;
+}
+
+.footer-lower-text {
+    color: black;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .footer-upper-text {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        padding: 0.4em;
+    }
 }

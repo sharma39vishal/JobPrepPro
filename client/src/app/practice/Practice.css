@@ -131,6 +131,8 @@
     width: 58vw;
     margin: 0.1em;
     padding: 0.1em;
+    background-color: #FAF4B7;
+    border-radius: 0.4em;
 }
 
 .practice-title-heading {
@@ -171,6 +173,33 @@
     justify-content: center;
 }
 
+.more-question-pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2em;
+    margin-top: 1em;
+    padding: 0.2em;
+    overflow: hidden;
+    height: 10vh;
+    width:30%;
+    margin-left: 35%;
+}
+
+.more-question-pages img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.more-question-pages h3{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #000;
+    margin: 0 0.6em;
+    cursor: pointer;
+}
+
 /* Responsive practice Container */
 
 
@@ -181,6 +210,9 @@
     width: 19vw;
     margin: 0.1em;
     padding: 0.1em;
+    /* min-height: 4vh; */
+    background-color: #FAF4B7;
+
 }
 
 /* Title Section */
@@ -199,6 +231,15 @@
     margin: 0.1em;
 }
 
+.different-topics{
+    /* border: 1px solid firebrick; */
+    padding: 0.5em;
+    margin: 0.4em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 /* Responsive Tags Container */
 
 
@@ -208,6 +249,8 @@
     width: 19vw;
     margin: 0.1em;
     padding: 0.1em;
+    background-color: #FAF4B7;
+    border-radius: 0.4em;
 }
 
 .trending-companies-title {
@@ -224,6 +267,15 @@
     font-weight: 400;
     color: #000;
     margin: 0.1em;
+}
+
+.different-companies{
+    /* border: 1px solid firebrick; */
+    padding: 0.5em;
+    margin: 0.4em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Responsive Trending Companies Container */

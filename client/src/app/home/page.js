@@ -51,14 +51,6 @@ export default function page() {
           </button>
         </div>
       </div>
-      <div className='footer'>
-        <p className='footer-upper-text'>
-          JobPrepPro - Power your Preparartion 
-        </p>
-        <p className='footer-lower-text'>
-          JobPrepPro.com &copy; 2023 
-        </p>
-      </div>
     </div>
 
   )

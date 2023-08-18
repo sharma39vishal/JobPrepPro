@@ -1,6 +1,6 @@
 'use client'
 import React, { useContext, useState } from 'react'
-import './Header.css'
+import './header.css'
 import AuthContext from '../Context/authContext'
 import axios from 'axios';
 import Image from 'next/image';
@@ -29,15 +29,15 @@ export default function Header() {
             <div className="nav-left-single-item">
               <Link href="/discussion">Discussion</Link>
             </div>
-            <div className="nav-left-single-item">
+            {/* <div className="nav-left-single-item">
               <Link href="/roadmap">Roadmap</Link>
-            </div>
+            </div> */}
             <div className="nav-left-single-item">
               <Link href="/achievers">Achievers</Link>
             </div>
           </div>
           <div className="navbar-logo">
-            <Link href="/home"><img src="https://icon-library.com/images/icon-logo-png/icon-logo-png-11.jpg" alt="Loading Error" /></Link>
+            <Link href="/"><img src="https://icon-library.com/images/icon-logo-png/icon-logo-png-11.jpg" alt="Loading Error" /></Link>
           </div>
           <div className="navbar-right-items">
             <div className="nav-right-developer">

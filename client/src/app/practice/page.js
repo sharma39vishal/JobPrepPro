@@ -6,8 +6,10 @@ import DsaSheet from './DsaSheet'
 import CoreSubject from './CoreSubject'
 import PracticeSingle from './PracticeSingle';
 import Link from 'next/link';
+import TopicTags from './TopicTags';
+import TrendCompany from './TrendCompany';
 
-export default function page() {
+export default function Page() {
   const [content, setcontent] = useState([]);
   const callapi = async () => {
     axios.get("/questions/")
@@ -59,9 +61,14 @@ export default function page() {
             <h3 className='title-three'>Difficulty</h3>
           </div>
           <div className="practice-description-questions">
-            {content.map(item=>{
-              return <PracticeSingle queTitle={item.Title} queAccept={'58%'} queDifficulty={'Easy'} quesid={item._id}/>
+            {content.map((item, index) => {
+              return <PracticeSingle key={index} queTitle={item.Title} queAccept={'58%'} queDifficulty={'Easy'} quesid={item._id} />
             })}
+          </div>
+          <div className="more-question-pages">
+            <img src="/images/leftArrow.png" alt="Loading Error" />
+            <h3 className="present-page">Present</h3>
+            <img src="/images/rightArrow.png" alt="Loading Error" />
           </div>
         </div>
         <div className="topic-related-tags">
@@ -69,7 +76,23 @@ export default function page() {
             <h3>Topics</h3>
           </div>
           <div className="different-topics">
-            
+            <TopicTags topicTag={'Array'} />
+            <TopicTags topicTag={'Binary Search'} />
+            <TopicTags topicTag={'Greedy'} />
+            <TopicTags topicTag={'Game Theory'} />
+            <TopicTags topicTag={'Dynamic Programming'} />
+            <TopicTags topicTag={'Linked List'} />
+            <TopicTags topicTag={'Queue'} />
+            <TopicTags topicTag={'Stack'} />
+            <TopicTags topicTag={'Binary Tree'} />
+            <TopicTags topicTag={'Graph'} />
+            <TopicTags topicTag={'Priority Queue'} />
+            <TopicTags topicTag={'Array'} />
+            <TopicTags topicTag={'Array'} />
+            <TopicTags topicTag={'BinarySearch'} />
+            <TopicTags topicTag={'Array'} />
+            <TopicTags topicTag={'Array'} />
+            <TopicTags topicTag={'Array'} />
           </div>
         </div>
         <div className="trending-companies">
@@ -77,7 +100,17 @@ export default function page() {
             <h3>Companies</h3>
           </div>
           <div className="different-companies">
-
+            <TrendCompany trendCompany={'Apple'} />
+            <TrendCompany trendCompany={'Microsoft'} />
+            <TrendCompany trendCompany={'Instagram'} />
+            <TrendCompany trendCompany={'Zomato'} />
+            <TrendCompany trendCompany={'TikTok'} />
+            <TrendCompany trendCompany={'PayPal'} />
+            <TrendCompany trendCompany={'GPay'} />
+            <TrendCompany trendCompany={'TCS'} />
+            <TrendCompany trendCompany={'Walmart'} />
+            <TrendCompany trendCompany={'Consultadd'} />
+            <TrendCompany trendCompany={'Apple'} />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './ChangePassword.css'
-export default function page() {
+export default function Page() {
     return (
         <div className="outer-box">
             <div className="modal">

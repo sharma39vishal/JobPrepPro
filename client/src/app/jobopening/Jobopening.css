@@ -1,80 +1,96 @@
-.outer-box{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100vh;
-    padding-top: 16vh;
-    background-color: #B8E8FC;
-  }
+.outer-box {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 16vh;
+  background-color: #B8E8FC;
+}
 
-  .container{
-    background: #BCCEF8;
-    width: 40em;
-    margin: auto;
-    text-align: center;
-    border-radius: 1em;
-    padding: 3em 0em;
-    color: black;
-  }
+.container {
+  background: #BCCEF8;
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 40em;
+  margin: auto;
+  text-align: center;
+  border-radius: 1em;
+  padding: 3em 1em; /* Adjust padding for smaller screens */
+  color: black;
+}
 
-  .upper-txt{
-    padding: 1em;
-  }
+.upper-txt {
+  padding: 1em;
+}
 
-  .middle-txt{
-    /* padding: 1em; */
-    font-size: 3em;
-    font-weight: 1000;
-    letter-spacing: .2em;
-  }
+.middle-txt {
+  font-size: 3em;
+  font-weight: 1000;
+  letter-spacing: 0.2em;
+}
 
-  .lower-txt{
-    padding: 1em;
-  }
+.lower-txt {
+  padding: 1em;
+}
 
-  .time-container{
-    display: flex;
-    margin: 2em 9em;
-  }
+.time-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center time elements */
+  margin: 2em 1em; /* Adjust margin for smaller screens */
+}
 
-  .time{
-    background: #C9F4AA;
-    padding: .5em;
-    border-radius: .5em;
-    margin: .7em;
-    width: 8em;
-  }
+.time {
+  background: #C9F4AA;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin: 0.7em;
+  width: 100%; /* Adjust width for smaller screens */
+  max-width: 8em;
+}
 
-  button {
-    max-width: 20em;
-    display: flex;
-    padding: 0.5rem 1.4rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    text-align: center;
-    text-transform: uppercase;
-    vertical-align: middle;
-    align-items: center;
-    border-radius: 0.5rem;
-    border: none;
-    gap: 0.75rem;
-    color: black;
-    background-color: #FDFFBC;
-    cursor: pointer;
-    transition: all .6s ease;
-    margin: auto;
+button {
+  max-width: 20em;
+  display: flex;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: none;
+  gap: 0.75rem;
+  color: black;
+  background-color: #FDFFBC;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  margin: 1em auto; /* Adjust margin for smaller screens */
 }
 
 .button svg {
   height: 1.5em;
-  margin: .3em;
+  margin: 0.3em;
 }
 
 button:hover {
-    transform: scale(1.02);
-    background-color: #FDD998;
+  transform: scale(1.02);
+  background-color: #FDD998;
 }
 
 .top-buttons {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 2em 1em;
+  }
+  
+  .time-container {
+      margin: 1em 0;
+  }
 }

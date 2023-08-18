@@ -11,6 +11,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http
     ,{cors:{"origin":[
       "http://localhost:3000",
+      "https://jobpreppro.netlify.app",
     ],
     credentials: true,
   }}
@@ -56,7 +57,7 @@ mongoose.connect(process.env.MDB_CONNECT)
 .then(()=>{console.log('Mongodb connected')});
 
 // set up routes
-app.use("/auth", require("./Routes/Authentication"));
+// app.use("/auth", require("./Routes/Authentication"));
 app.use("/discuss", require("./Routes/DiscussionRoutes"));
 app.use("/questions", require("./Routes/QuestionRoutes"));
 app.use("/achiver", require("./Routes/AchiversRoutes"));
