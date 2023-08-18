@@ -1,7 +1,0 @@
-{
-  "/jobopening/page": "app/jobopening/page.js",
-  "/discussion/page": "app/discussion/page.js",
-  "/practice/page": "app/practice/page.js",
-  "/achievers/page": "app/achievers/page.js",
-  "/groups/[group]/page": "app/groups/[group]/page.js"
-}
