@@ -4,15 +4,13 @@ import Link from 'next/link'
 
 export default function Page() {
   return (
-    <div className="outer-box">
-      <div className="container">
-        <div className="developer">
-          <div className="photo">
-            <img className="image" src="https://media.licdn.com/dms/image/D4D35AQFrpjXx0DfMEQ/profile-framedphoto-shrink_400_400/0/1685036782541?e=1692774000&v=beta&t=MwUs2ei64ocB4uUNGZKMcQton0SgVkJtqQe0K_oFCc4" alt="" />
-          </div>
-          <div className="description">
-            <h3>Vishal Sharma</h3>
-            <div className="social-links">
+    <div class="container">
+  <h1>Our Team</h1>
+  <div class="row">
+    <div class="card">
+      <img src="https://media.licdn.com/dms/image/D4D35AQFrpjXx0DfMEQ/profile-framedphoto-shrink_400_400/0/1685036782541?e=1692774000&v=beta&t=MwUs2ei64ocB4uUNGZKMcQton0SgVkJtqQe0K_oFCc4"alt="*"></img>
+      <h2>Vishal Sharma</h2>
+      <div className="social-links">
 
               <Link id="linkedin" className="social-btn flex-center" href='https://www.linkedin.com/in/sharma39vishal/'>
                 <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path></svg><span>LinkedIn</span>
@@ -26,15 +24,11 @@ export default function Page() {
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path></svg><span>Coding</span>
               </Link>
             </div>
-          </div>
-        </div>
-        <div className="developer">
-          <div className="photo">
-            <img className="image" src="https://media.licdn.com/dms/image/D4D03AQEZkLioHrHWxw/profile-displayphoto-shrink_800_800/0/1666960727930?e=1697673600&v=beta&t=Rtr96E_y_e0GIFJsv-pqXu5u2P0BDx8b5RrknQl1MFA" alt="" />
-          </div>
-          <div className="description">
-            <h3>Nehanshu Ajmera</h3>
-            <div className="social-links">
+    </div>
+    <div class="card" >
+      <img src="https://media.licdn.com/dms/image/D4D03AQEZkLioHrHWxw/profile-displayphoto-shrink_800_800/0/1666960727930?e=1697673600&v=beta&t=Rtr96E_y_e0GIFJsv-pqXu5u2P0BDx8b5RrknQl1MFA" alt="*"></img>
+      <h2>Nehanshu Ajmera</h2>
+      <div className="social-links">
 
               <Link id="linkedin" className="social-btn flex-center" href="https://www.linkedin.com/in/nehanshuajmera/">
                 <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path></svg><span>LinkedIn</span>
@@ -48,15 +42,11 @@ export default function Page() {
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path></svg><span>Coding</span>
               </Link>
             </div>
-          </div>
-        </div>
-        <div className="developer">
-          <div className="photo">
-            <img className="image" src="https://media.licdn.com/dms/image/D4D03AQGKA9EUeP0HMg/profile-displayphoto-shrink_800_800/0/1686199512649?e=1697673600&v=beta&t=8Mr47-6KxIwVpjDjJizFHzUgxDMbMRgCs6QGvGNF9E4" alt="" />
-          </div>
-          <div className="description">
-            <h3>Nikita Choudhary</h3>
-            <div className="social-links">
+    </div>
+    <div class="card" >
+      <img src="https://media.licdn.com/dms/image/D4D03AQGKA9EUeP0HMg/profile-displayphoto-shrink_800_800/0/1686199512649?e=1697673600&v=beta&t=8Mr47-6KxIwVpjDjJizFHzUgxDMbMRgCs6QGvGNF9E4" alt="*"></img>
+      <h2>Nikita Choudhary</h2>
+      <div className="social-links">
 
               <Link id="linkedin" className="social-btn flex-center" href="https://www.linkedin.com/in/nikita-choudhary-34385324a/">
                 <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path></svg><span>LinkedIn</span>
@@ -70,10 +60,8 @@ export default function Page() {
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path></svg><span>Coding</span>
               </Link>
             </div>
-
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
   )
 }
