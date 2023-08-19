@@ -1,25 +1,5 @@
 .footer {
-    height: 7em;
-    width: 100%;
-    background-color: #C9F4AA;
-}
-
-.footer-upper-text {
-    color: black;
     text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    padding: 0.6em 0em;
-}
-
-.footer-lower-text {
-    color: black;
-    text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-    .footer-upper-text {
-        font-size: 24px; 
-        padding: 0.4em;
-    }
-}
+    background-color:#0288D1;
+    padding: 10px;
+  }

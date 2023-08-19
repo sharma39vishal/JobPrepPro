@@ -7,10 +7,10 @@
     align-items: center;
     justify-content: center;
     /* border: 1px solid red; */
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    background-color: #C9F4AA;
+    /* position: fixed; */
+    /* top: 0; */
+    /* z-index: 99; */
+    background-color: #141A1F;
 }
 
 /* Navbar items container inside the parent container */
@@ -45,7 +45,7 @@
     margin: 0.4em 0.4em 0.2em 0.4em; 
     padding: 0.4em;
     text-decoration: none;
-    color: #1572A1;  /* Navbar Font Color */
+    color: white;  /* Navbar Font Color */
     display: inline-block;
 }
 
@@ -55,7 +55,7 @@
     display: block;
     transform: scaleX(0);
     margin: 0.1em;
-    border-bottom: 0.1em solid #1572A1;
+    border-bottom: 0.1em solid #fff;
     transition: transform 0.2s ease-in-out;
     transform-origin: center; 
 }
@@ -89,7 +89,7 @@
     margin: 0.4em;
     text-decoration: none;
     display: inline-block;
-    color: #1572A1;
+    color: #fff;
 }
 
 /* Developer item CSS */
@@ -103,7 +103,7 @@
     display: block;
     transform: scaleX(0);
     margin: 0.1em;
-    border-bottom: 0.1em solid #1572A1;
+    border-bottom: 0.1em solid #fff;
     transition: transform 0.2s ease-in-out;
     transform-origin: center; 
 }
@@ -120,7 +120,7 @@
 
 .nav-right-signin a{
     color: #000;
-    background-color: #FDFFBC;
+    background-color: #0288D1;
     border-radius: 0.3em;
     padding: 0.5em;
     margin: 0.1em;
@@ -128,7 +128,7 @@
 }
 
 .nav-right-signin a:hover{
-    background-color: #FDD998;
+    background-color: #fff;
     color: #000;
 }
 
