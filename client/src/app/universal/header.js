@@ -10,9 +10,9 @@ export default function Header() {
   const { UserDetails } = useContext(AuthContext);
   // console.log(UserDetails);
   const [avatardropdown, setavatardropdown] = useState(false);
-  
-  const logout=async()=>{
-    await axios.get("/auth/logout").then(()=>{window.location.reload();})
+
+  const logout = async () => {
+    await axios.get("/auth/logout").then(() => { window.location.reload(); })
   }
 
   return (
@@ -29,9 +29,9 @@ export default function Header() {
             <div className="nav-left-single-item">
               <Link href="/discussion">Discussion</Link>
             </div>
-            {/* <div className="nav-left-single-item">
+            <div className="nav-left-single-item">
               <Link href="/roadmap">Roadmap</Link>
-            </div> */}
+            </div>
             <div className="nav-left-single-item">
               <Link href="/achievers">Achievers</Link>
             </div>
@@ -45,15 +45,15 @@ export default function Header() {
             </div>
             <div className="nav-right-signin">
 
-              {!UserDetails?<a href="/signin">Sign In</a>:<div>
-              <div >
-                <Image  width={"40"} height={"40"} src={UserDetails?.profilePic} alt="profile Photo" onClick={()=>{setavatardropdown(!avatardropdown)}}/>
-              </div>
-             {avatardropdown? 
-              <div className='avatar-dropdown'>
-                <a href={`/userprofile/${UserDetails.username}`}>Profile</a>
-                <a onClick={()=>{logout()}}>LogOut</a>
-              </div>:null}
+              {!UserDetails ? <a href="/signin">Sign In</a> : <div>
+                <div >
+                  <Image width={"40"} height={"40"} src={UserDetails?.profilePic} alt="profile Photo" onClick={() => { setavatardropdown(!avatardropdown) }} />
+                </div>
+                {avatardropdown ?
+                  <div className='avatar-dropdown'>
+                    <a href={`/userprofile/${UserDetails.username}`}>Profile</a>
+                    <a onClick={() => { logout() }}>LogOut</a>
+                  </div> : null}
 
               </div>}
             </div>
