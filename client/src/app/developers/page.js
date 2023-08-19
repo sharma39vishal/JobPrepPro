@@ -4,7 +4,8 @@ import Link from 'next/link'
 
 export default function Page() {
   return (
-    <div class="container">
+    <div className='developer-page'>
+    <div class="">
   <h1>Our Team</h1>
   <div class="row">
     <div class="card">
@@ -26,7 +27,7 @@ export default function Page() {
             </div>
     </div>
     <div class="card" >
-      <img src="https://media.licdn.com/dms/image/D4D03AQEZkLioHrHWxw/profile-displayphoto-shrink_800_800/0/1666960727930?e=1697673600&v=beta&t=Rtr96E_y_e0GIFJsv-pqXu5u2P0BDx8b5RrknQl1MFA" alt="*"></img>
+      <img src="https://avatars.githubusercontent.com/u/118723600?v=4" alt="*"></img>
       <h2>Nehanshu Ajmera</h2>
       <div className="social-links">
 
@@ -62,6 +63,7 @@ export default function Page() {
             </div>
     </div>
   </div>
+</div>
 </div>
   )
 }

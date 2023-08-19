@@ -7,7 +7,7 @@
 /* Section 1 Starts here */
 .discussion-section-1-container {
     min-height: 100vh;
-    padding-top: 13vh;
+    /* padding-top: 13vh; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -39,6 +39,7 @@
     margin: 0 2em;
     padding: 0.5em;
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
     align-self: flex-start;
 }
@@ -46,7 +47,15 @@
 .live-discussion-description a {
     text-decoration: none;
 }
-
+.live-discussion-description .fix-width{
+    width: 120%;
+}
+.live-discussion-description button{
+    padding: 3px 10px;
+    border-radius: 2px;
+    border: none;
+    margin: 2em;
+}
 .live-discussion-description h3 {
     font-size: 1.3em;
     font-weight: 400;
@@ -83,4 +92,35 @@
     object-fit: cover;
     border-radius: 0.4em;
     cursor: pointer;
+    
+}
+
+.discussion-section-2-container{
+    margin: 2em 5em;
+}
+.singlediscuss{
+    padding: 1em;
+}
+.title-one1{
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}
+.title-one1 p{
+    width: max-content;
+    margin: 0em 2em ;
+}
+.ask-discussion{
+    margin: 0em 10em;
+}
+.discussion-main button{
+    padding: 4px 10px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: #0288D1;
+}
+
+.singlediscuss h3{
+    color: #fff;
 }

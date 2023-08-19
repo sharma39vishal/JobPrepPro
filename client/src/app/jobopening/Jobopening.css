@@ -3,15 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   height: 100vh;
-  padding-top: 16vh;
-  background-color: #B8E8FC;
+  /* padding-top: 16vh; */
+  /* background-color: #B8E8FC; */
 }
 
 .container {
-  background: #BCCEF8;
+  background: #0288D1;
   width: 90%; /* Adjust width for smaller screens */
   max-width: 40em;
-  margin: auto;
+  margin: 2em auto;
   text-align: center;
   border-radius: 1em;
   padding: 3em 1em; /* Adjust padding for smaller screens */

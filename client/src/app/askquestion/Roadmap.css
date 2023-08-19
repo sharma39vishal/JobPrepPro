@@ -1,6 +1,7 @@
 .askQuestion-page {
     min-height: 100vh;
-    padding-top: 13vh;
+    /* padding-top: 13vh; */
+    background-color: #000;
 }
 
 .askQuestion-design-container {

@@ -15,7 +15,7 @@ span{
     box-sizing: border-box;
     min-height: 100vh;
     padding-top: 16vh;
-    background-color: #B8E8FC;
+    /* background-color: #B8E8FC; */
 	/* background: #f6f5f7; */
 	display: flex;
 	justify-content: center;
@@ -57,7 +57,7 @@ span{
 .signin-singup-outer-box button {
 	border-radius: 5px;
 	border: none;
-	background-color: #C9F4AA;
+	background-color: #0288D1;
 	color: black;
 	font-size: 12px;
 	font-weight: bold;

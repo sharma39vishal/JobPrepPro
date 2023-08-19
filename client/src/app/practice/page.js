@@ -29,7 +29,7 @@ export default function Page() {
     <div className='practice-main'>
       <div className="practice-dsa-sheet">
         <div className="dsa-sheet-heading">
-          <h4>DSA Sheet</h4>
+          <h4 >DSA Sheet</h4>
           <Link href=''><h5>See All</h5></Link>
         </div>
         <div className="practice-dsa-sheet-container">

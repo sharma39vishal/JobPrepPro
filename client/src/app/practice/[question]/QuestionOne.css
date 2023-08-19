@@ -1,8 +1,8 @@
 .one-question-selected {
     min-height: 100vh;
     padding-top: 13vh;
-    background-color: #B8E8FC;
-    color: #000;
+    /* background-color: #B8E8FC; */
+    /* color: #000; */
 }
 
 .innerSelected-question-container{
@@ -73,6 +73,7 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: #FAF4B7;
+    color: #0288D1;
     border-radius: 0.4em;
 }
 

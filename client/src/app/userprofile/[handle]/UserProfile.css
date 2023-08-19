@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
-    padding-top: 16vh;
-    background-color: #B8E8FC;
+    min-height: 80vh;
+    /* padding-top: 16vh; */
+    /* background-color: #B8E8FC; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
   .modal {
     width: 38em;
     margin: auto;
-    background: #BCCEF8;
+    background: #0288D1;
     border-radius: 1em;
     padding: 2em;
   }

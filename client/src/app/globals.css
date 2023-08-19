@@ -6,9 +6,10 @@
 }
 
 body{
-  background-color: #141A1F;
+  background-color: #11161A;
   color: #fff;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 .avatar-dropdown{

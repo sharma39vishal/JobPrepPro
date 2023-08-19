@@ -10,7 +10,7 @@ export default function Page({ params }) {
     axios.get(`/achiver/${params.ReadMore}`)
       .then((res) => {
         setreadMoreData(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       })
 
   }, []);
@@ -18,7 +18,7 @@ export default function Page({ params }) {
   return (
     <div className='achiever-read-more-page'>
       <div className="selected-achiever-page-container">
-        <div className="before-fixed-achiever"></div>
+        {/* <div className="before-fixed-achiever"></div> */}
         <div className="achiever-fixed-section-container">
           <div className="achiever-fixed-image">
             <img src={readMoreData?.images} alt="" />

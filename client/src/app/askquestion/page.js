@@ -24,7 +24,10 @@ export default function Page() {
             <input class="input" name="text" placeholder="Enter a attractive Title..." type="search" />
           </div>
           <div className="askQuestion-description">
-            <textarea placeholder=' Enter the description...' name="AskDescription" id="AskDescription" cols="96" rows="8"></textarea>
+            <textarea placeholder=' Enter the description...' name="AskDescription" id="AskDescription" 
+            // cols="96" rows="8"
+            style={{height:"20vh",width:"60vw",padding:"1em"}}
+            ></textarea>
           </div>
           <div className="askquestion-tags">
             <input class="input" name="text" placeholder="Enter topic related tags..." type="search" />
@@ -34,7 +37,7 @@ export default function Page() {
         {/* Right Side Container */}
         <div className="askQuestion-right-container">
           <div className="askQuestion-moreDetails">
-            <textarea placeholder=' What are your expectation from the problem?...' name="AskDescription" id="AskDescription" cols="46" rows="12"></textarea>
+            <textarea placeholder=' What are your expectation from the problem?...' name="AskDescription" id="AskDescription"   style={{height:"20vh",width:"30vw",padding:"1em"}}></textarea>
           </div>
           <div className="sendIcon-image">
             <img src="/images/sendIcon.png" alt="" />

@@ -8,10 +8,11 @@ export default function SingleLiveDiscuss(props) {
     <div onMouseMove={() => {
       props.setimage(props.discussImage)
     }} className="live-discussion-description">
-      <div>
+      <div className='fix-width'>
       <Link href=''><h3>{props.discussDescription}</h3></Link> 
       </div>
       <div>
+     
       {props.discussImage===props.image?<div>
         <button onClick={()=>{router.push(`/groups/${props.discussDescription}`)}}>JOIN</button>
       </div>:null}

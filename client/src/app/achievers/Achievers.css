@@ -3,9 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
-    padding-top: 13vh;
-    background-color: #B8E8FC;
+    min-height: 100vh;
+    /* padding-top: 13vh; */
+    background-color: #999;
 }
 
 /* .achievers-section-1-container {
@@ -24,7 +24,7 @@
     justify-content: center;
     flex-wrap: wrap;
     font-family: 'Inter', sans-serif;
-    background-color: #B8E8FC;
+    /* background-color: #B8E8FC; */
 }
 
 .single-story-container {
@@ -35,7 +35,7 @@
     flex-wrap: wrap;
     align-items: center;
     font-family: 'Inter', sans-serif;
-    background-color: #BCCEF8;
+    background-color: #11161A;
     /* background-color: #D2DAFF; */
     border-radius: 0.3em;
 }

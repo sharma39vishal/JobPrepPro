@@ -26,7 +26,7 @@ export default function Page() {
   return (
     <div className='discussion-main'>
       <div className="discussion-section-1-container">
-        <h2>Click below links to join Live Discussion</h2>
+        <h1 style={{color:"#0288D1",margin:"1em 4em 0em 4em"}}>Click below links to join Live Discussion</h1>
         <div className="live-single-discuss-container">
           <div className='discussion-description'>
             <SingleLiveDiscuss image={image} setimage={setimage} discussDescription='Database_Management_System' discussImage='\images\dbmsDiscuss.png' />
@@ -42,10 +42,14 @@ export default function Page() {
       </div>
 
       {/* Section 2 Discussion Page */}
+      <h1 className='ask-discussion' style={{textAlign:"end"}}>
+        <button onClick={()=>{router.push(`/askquestion`)}}>Ask Question</button>
+      </h1>
       <div className="discussion-section-2-container">
+      <h1 style={{textAlign:"center"}}>Questions</h1>
             {content.map((item,index)=>{
-              return  (<div key={index} style={{cursor:"pointer"}} onClick={()=>{router.push(`/discussion/${item._id}`)}}>
-              <h3 className='title-one1'><p>{item.Title}</p></h3>
+              return  (<div className='singlediscuss' key={index} style={{cursor:"pointer"}} onClick={()=>{router.push(`/discussion/${item._id}`)}}>
+              <h3 className='title-one1'><p>{++index}. {item.Title}</p><p>{item.tags[0]}</p></h3>
           </div>)
             })}
       </div>

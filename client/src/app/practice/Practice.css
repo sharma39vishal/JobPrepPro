@@ -6,7 +6,7 @@
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
     padding-top: 13vh;
-    background-color: #B8E8FC;
+    background-color: #11161A;
 }
 
 /* DSA Sheet Section Starts Here */
@@ -24,7 +24,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    color: #000;
+    color: #fff;
 }
 
 /* DSA Sheet Heading */
@@ -47,7 +47,7 @@
 
 .dsa-sheet-heading a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 /* DSA Sheet Container : Section 1 CSS */
@@ -78,7 +78,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    color: #000;
+    color: #fff;
 }
 
 /* Core Subjects Heading */

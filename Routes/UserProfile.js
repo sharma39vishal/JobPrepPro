@@ -3,6 +3,7 @@ const User = require("../Model/UserModel");
 const jwt = require("jsonwebtoken");
 const jwt_decode=require("jwt-decode");
 const Recordlog = require("../Controller/logs");
+const isauthenticated = require("../Middleware/isauthenticated")
 
 router.get("/:id",(req, res) => {
     // console.log("USERNAME :",req.params.id)
@@ -11,7 +12,7 @@ router.get("/:id",(req, res) => {
         .catch((err) => res.status(400).json("Error: " + err));
 });
 
-router.get("/deleteaccount",(req, res) => {
+router.get("/deleteaccount",isauthenticated,(req, res) => {
     const token = req.cookies.token;
     const verified = jwt.verify(token, process.env.JWT_SECRET);
     Recordlog({user_id:verified.user,ip:req.ip,what:"User Profile Deleted"})
@@ -20,7 +21,7 @@ router.get("/deleteaccount",(req, res) => {
         .catch((err) => res.status(400).json("Error: " + err));
 });
 
-router.post("/editpassword",(req,res)=>{
+router.post("/editpassword",isauthenticated,(req,res)=>{
     const {oldpassword,newpassword}=req.body;
     const token = req.cookies.token;
     const verified = jwt.verify(token, process.env.JWT_SECRET);
