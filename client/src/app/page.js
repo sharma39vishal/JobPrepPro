@@ -3,9 +3,9 @@ import './Home.css'
 export default function page() {
   return (
     <div>
-      <body>
+      <div>
 
-        <main>
+        <div>
           <section class="flex-center column px-4 ">
             <h1 class="hero-title | p-4 text-center fs-32">Empowering Futures
             </h1>
@@ -51,8 +51,8 @@ export default function page() {
               </div>
             </div>
           </div>
-        </main>
-      </body>
+        </div>
+      </div>
     </div>
 
   )
