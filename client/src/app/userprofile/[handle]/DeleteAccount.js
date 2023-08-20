@@ -1,8 +1,20 @@
+"use client"
 import React from 'react'
 import './deleteaccount.css'
+import axios from 'axios'
 
 export default function DeleteAccount({delacc,setdelacc}) {
   
+  const callapi = async () => {
+    console.log("API Call")
+    await axios.get("/profile/deleteaccount")
+    .then((res)=>{
+      alert("Account was successfuly deactivated");
+      window.location.reload();
+    }).catch((err) => { console.log(err) })
+
+  }
+
   return (
     <div className={delacc?"card":"card make-display-none"}>
   <div className="header">
@@ -22,15 +34,15 @@ export default function DeleteAccount({delacc,setdelacc}) {
       </svg>
     </div>
     <div className="content">
-      <span className="title">Desactivate account</span>
+      <span className="title">Deactivate account</span>
       <p className="message">
         Are you sure you want to deactivate your account? All of your data will
         be permanently removed. This action cannot be undone.
       </p>
     </div>
     <div className="actions">
-      <button className="desactivate" type="button">
-        Desactivate
+      <button className="desactivate" onClick={()=>{callapi()}} type="button">
+        Deactivate
       </button>
       <button className="cancel" type="button" onClick={()=>{ setdelacc(false)}} > 
         Cancel

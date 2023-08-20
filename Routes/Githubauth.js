@@ -53,7 +53,7 @@ router.get('/github/callback', (req, res) => {
             httpOnly: true,
             secure: true,
             sameSite: "none",
-        }).status(200).redirect("/");
+        }).status(200).redirect("http://localhost:3000/");
       }
       else{
         // save a new user account to the db
