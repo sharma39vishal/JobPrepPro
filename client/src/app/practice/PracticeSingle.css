@@ -9,11 +9,11 @@
 
 .single-practice-question-container a{
     text-decoration: none;
-    color: #000;
+    color: #999;
 }
 
 .single-practice-question-container h3{
-    color: #000;
+    color: #999;
 }
 
 .title-one1 {
@@ -44,7 +44,7 @@
 
 /* Tags Single */
 .dynamic-topic-tags-container{
-    background-color: #c9f4aa;
+    background-color: #999;
     border-radius: 0.4em;
     padding: 0.3em;
     margin: 0.3em;
@@ -59,7 +59,7 @@
 
 /* Company Single */
 .dynamic-companies{
-    background-color: #c9f4aa;
+    background-color: #999;
     border-radius: 0.4em;
     padding: 0.3em;
     margin: 0.3em;

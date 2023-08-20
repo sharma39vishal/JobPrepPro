@@ -68,6 +68,7 @@ export default function Page() {
           <div className="more-question-pages">
             <img src="/images/leftArrow.png" alt="Loading Error" />
             <h3 className="present-page">Present</h3>
+            {/* <i class="fi fi-sr-angle-double-small-right"></i> */}
             <img src="/images/rightArrow.png" alt="Loading Error" />
           </div>
         </div>
