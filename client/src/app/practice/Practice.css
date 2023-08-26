@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    padding-top: 13vh;
+    /* padding-top: 13vh; */
     background-color: #11161A;
 }
 
@@ -130,8 +130,10 @@
     /* border: 1px solid green; */
     width: 58vw;
     margin: 0.1em;
-    padding: 0.1em;
+    padding: 0.4em;
     background-color: #FAF4B7;
+    background-color: #999;
+    background-color: #000;
     border-radius: 0.4em;
 }
 
@@ -147,7 +149,7 @@
 .practice-title-heading h3 {
     font-size: 1.2em;
     font-weight: 400;
-    color: #000;
+    color: #fff;
 }
 
 .title-one {
@@ -195,7 +197,7 @@
 .more-question-pages h3{
     font-size: 1.3em;
     font-weight: 500;
-    color: #000;
+    color: #fff;
     margin: 0 0.6em;
     cursor: pointer;
 }
@@ -211,8 +213,8 @@
     margin: 0.1em;
     padding: 0.1em;
     /* min-height: 4vh; */
-    background-color: #FAF4B7;
-
+    /* background-color: #FAF4B7; */
+    background-color: #000;
 }
 
 /* Title Section */
@@ -227,7 +229,7 @@
 .topics-title-heading h3 {
     font-size: 1.2em;
     font-weight: 400;
-    color: #000;
+    color: #fff;
     margin: 0.1em;
 }
 
@@ -249,7 +251,8 @@
     width: 19vw;
     margin: 0.1em;
     padding: 0.1em;
-    background-color: #FAF4B7;
+    /* background-color: #FAF4B7; */
+    background-color: #000;
     border-radius: 0.4em;
 }
 
@@ -265,7 +268,7 @@
 .trending-companies-title h3 {
     font-size: 1.2em;
     font-weight: 400;
-    color: #000;
+    color: #fff;
     margin: 0.1em;
 }
 
